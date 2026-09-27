@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD1. Programar con bloques · 2.º ESO</title>
+<meta name="description" content="Dar órdenes a una máquina que no supone nada">
+<meta name="author" content="Emilio Rubio">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='19'>&#9881;</text></svg>">
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a class="marca" href="index.html">
+      <span class="sello">CYR·2</span>
+      <span>Computación y Robótica<small>2.º ESO · Coria del Río (Sevilla)</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">2.º ESO</a><a href="2eso-curriculo.html">Currículo</a><a href="2eso-rubricas.html">Rúbricas</a><a href="2eso-presentacion.html">Presentación</a><a href="2eso-diagnostico.html">¿Qué sé ya?</a><a href="glosario.html">Glosario</a>
+      <button type="button" data-tema-bt aria-pressed="false" title="Cambiar entre modo claro y oscuro">Tema</button>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="cabecera-ud">
+<p class="eyebrow">2.º ESO · Unidad 1 · 1.ª vuelta</p>
+<h1>Programar con bloques</h1>
+<p class="subtitulo">Dar órdenes a una máquina que no supone nada</p>
+<p>Esta asignatura va de construir cosas que funcionan. Y casi todo lo que vas a
+construir este curso —un robot que esquiva obstáculos, una aplicación para el móvil, un sistema que
+enciende una luz al anochecer— empieza en el mismo sitio: un programa.</p>
+<p>Programar no es escribir código raro. Es <strong>ordenar tus ideas con tanta precisión que una
+máquina pueda seguirlas</strong>. Esa es la parte difícil, y es la que vas a practicar aquí. El resto
+viene solo.</p>
+<div class="caja caja-coria"><span class="et">Tu portfolio del curso</span>
+<p>Desde hoy vas a guardar en una carpeta todo lo que hagas: programas, capturas, ideas que no salieron
+y por qué. Eso es tu <strong>portfolio</strong>, y lo irás llenando unidad a unidad.</p>
+<p>En la UD6 lo convertirás en una página web de verdad. Por eso conviene que guardes las cosas bien
+desde el principio: en marzo te alegrarás.</p></div>
+<div class="ficha">
+  <span class="dato"><b>8</b> sesiones</span>
+  <span class="dato"><b>6</b> apartados de teoría</span>
+  <span class="dato"><b>2</b> ejercicios evaluables</span>
+</div>
+<div class="ficha" style="margin-top:.6rem"><span class="dato">Criterios</span><a class="chip" href="2eso-curriculo.html#c1-3" title="Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.">1.3</a> <a class="chip" href="2eso-curriculo.html#c2-1" title="Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.">2.1</a></div>
+<div class="ficha" style="margin-top:.4rem"><span class="dato">Saberes</span><a class="chip s" href="2eso-curriculo.html#sA-1" title="Lenguajes de programación visuales: ventajas e inconvenientes.">A.1</a> <a class="chip s" href="2eso-curriculo.html#sA-2" title="Elementos de los programas con lenguaje de bloques.">A.2</a> <a class="chip s" href="2eso-curriculo.html#sA-3" title="Secuencia de instrucciones. Medios de expresión de algoritmos.">A.3</a> <a class="chip s" href="2eso-curriculo.html#sA-4" title="Generación de tareas repetitivas y condicionales.">A.4</a> <a class="chip s" href="2eso-curriculo.html#sA-5" title="Pantallas de interacción con el usuario.">A.5</a></div>
+<p class="reto">¿Cómo se le explica algo a una máquina que hace exactamente lo que le dices, ni más ni menos?</p>
+</div>
+<section class="mapa">
+  <h2>Mapa de la unidad</h2>
+  <p class="pista">Línea continua: teoría. Línea discontinua y borde de trazos: ejercicio evaluable y
+  la teoría de la que depende. Toca cualquier nodo para ir a su contenido.</p>
+  <div class="mapa-lienzo"><svg viewBox="0 0 900 530" role="img" aria-label="Mapa conceptual de la unidad 1"><path class="enlace" data-enlace-de="t1" d="M 248 265.0 C 290 265.0 290 65.0 330 65.0"/><path class="enlace" data-enlace-de="t2" d="M 248 265.0 C 290 265.0 290 145.0 330 145.0"/><path class="enlace" data-enlace-de="t3" d="M 248 265.0 C 290 265.0 290 225.0 330 225.0"/><path class="enlace" data-enlace-de="t4" d="M 248 265.0 C 290 265.0 290 305.0 330 305.0"/><path class="enlace" data-enlace-de="t5" d="M 248 265.0 C 290 265.0 290 385.0 330 385.0"/><path class="enlace" data-enlace-de="t6" d="M 248 265.0 C 290 265.0 290 465.0 330 465.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 145.0 C 600 145.0 600 219.0 642 219.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 225.0 C 600 225.0 600 219.0 642 219.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 305.0 C 600 305.0 600 219.0 642 219.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 465.0 C 600 465.0 600 219.0 642 219.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 65.0 C 600 65.0 600 311.0 642 311.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 225.0 C 600 225.0 600 311.0 642 311.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 305.0 C 600 305.0 600 311.0 642 311.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 385.0 C 600 385.0 600 311.0 642 311.0"/><g class="nodo centro"><rect class="caja" x="16" y="229.0" width="232" height="72" rx="5"/><text x="132" y="259.0" text-anchor="middle">UD1</text><text x="132" y="279.0" text-anchor="middle" font-size="11.5" font-weight="500">Programar con bloques</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t1"><rect class="caja" x="330" y="36.0" width="226" height="58" rx="4"/><text x="443" y="63.0" text-anchor="middle">Qué significa programar</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t2"><rect class="caja" x="330" y="116.0" width="226" height="58" rx="4"/><text x="443" y="135.5" text-anchor="middle">Las piezas de un</text><text x="443" y="150.5" text-anchor="middle">programa</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t3"><rect class="caja" x="330" y="196.0" width="226" height="58" rx="4"/><text x="443" y="215.5" text-anchor="middle">El orden importa:</text><text x="443" y="230.5" text-anchor="middle">secuencia y algoritmos</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t4"><rect class="caja" x="330" y="276.0" width="226" height="58" rx="4"/><text x="443" y="303.0" text-anchor="middle">Repetir y decidir</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t5"><rect class="caja" x="330" y="356.0" width="226" height="58" rx="4"/><text x="443" y="375.5" text-anchor="middle">Hablar con quien usa el</text><text x="443" y="390.5" text-anchor="middle">programa</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t6"><rect class="caja" x="330" y="436.0" width="226" height="58" rx="4"/><text x="443" y="463.0" text-anchor="middle">Cuando no funciona</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e1"><rect class="caja" x="642" y="186.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="202.0" text-anchor="middle">CRITERIO 1.3</text><text x="762" y="222.0" text-anchor="middle">Lee, predice y arregla</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e2"><rect class="caja" x="642" y="278.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="294.0" text-anchor="middle">CRITERIO 2.1</text><text x="762" y="314.0" text-anchor="middle">Tu primer proyecto</text></g></svg></div>
+  <ul class="mapa-lista"><li><a href="#t1" data-destino="t1"><span class="cod">TEORÍA</span>Qué significa programar</a></li><li><a href="#t2" data-destino="t2"><span class="cod">TEORÍA</span>Las piezas de un programa</a></li><li><a href="#t3" data-destino="t3"><span class="cod">TEORÍA</span>El orden importa: secuencia y algoritmos</a></li><li><a href="#t4" data-destino="t4"><span class="cod">TEORÍA</span>Repetir y decidir</a></li><li><a href="#t5" data-destino="t5"><span class="cod">TEORÍA</span>Hablar con quien usa el programa</a></li><li><a href="#t6" data-destino="t6"><span class="cod">TEORÍA</span>Cuando no funciona</a></li><li class="tarea"><a href="#e1" data-destino="e1"><span class="cod">EJERCICIO · CRITERIO 1.3</span>Lee, predice y arregla</a></li><li class="tarea"><a href="#e2" data-destino="e2"><span class="cod">EJERCICIO · CRITERIO 2.1</span>Tu primer proyecto</a></li></ul>
+</section>
+<section class="progreso" data-progreso-ud="2eso1">
+<strong>Tu progreso en esta unidad</strong>
+<div class="barra-p"><div class="relleno"></div></div>
+<span data-progreso-txt style="font-size:.88rem;color:var(--tinta-2)"></span>
+<p class="aviso">Las marcas se guardan solo en este navegador y en este dispositivo: no las ve el
+profesorado y no sustituyen a la entrega real. Si usas un ordenador compartido del aula, es normal que
+no aparezcan. <button type="button" class="bt" data-reset>Desmarcar todo</button></p>
+</section>
+<div class="bloque-titulo"><h2>Teoría</h2><span class="et">6 apartados</span><button type="button" class="bt" data-abrir-todo data-abierto="0" style="margin-left:auto">Desplegar todo</button></div>
+<details class="seccion" id="t1" open><summary><span class="num">1</span>Qué significa programar<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un <a class="termino" href="glosario.html#programa" title="Programa: Conjunto ordenado de instrucciones que una máquina ejecuta al pie de la letra para conseguir un resultado.">programa</a> es una lista de <a class="termino" href="glosario.html#instruccion" title="Instrucción: Cada una de las órdenes concretas que forman un programa.">instrucciones</a> que una máquina
+ejecuta en orden y al pie de la letra.</p>
+<p>Lo de «al pie de la letra» es lo que cuesta asumir. Una persona rellena los huecos: si le dices
+«pon la mesa», sabe cuántos platos, dónde van y que los vasos no se ponen boca abajo. Una máquina no
+rellena nada. Si no se lo dices, no pasa. Y si se lo dices mal, lo hace mal sin avisarte.</p>
+<h4>¿Por qué con bloques y no escribiendo?</h4>
+<p>Un <a class="termino" href="glosario.html#lenguaje-bloques" title="Lenguaje de bloques: Forma de programar encajando piezas en lugar de escribir texto. Las piezas solo encajan donde tienen sentido, así que evita los errores de escritura.">lenguaje de bloques</a> sustituye el texto por piezas que encajan. Tiene dos ventajas grandes:
+no puedes equivocarte al escribir, porque no escribes; y las piezas <strong>solo encajan donde tienen
+sentido</strong>, así que el propio entorno te impide construir cosas imposibles.</p>
+<p>También tiene inconvenientes, y conviene saberlos. Un proyecto grande se vuelve una montaña de
+piezas difícil de leer. Y fuera del aula casi nadie programa así: el salto a escribir código habrá que
+darlo tarde o temprano.</p>
+<p>La buena noticia es que <strong>lo que aprendes aquí no se pierde en ese salto</strong>. Las
+estructuras son las mismas en bloques que en cualquier lenguaje escrito; solo cambia cómo se teclean.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>El corrector del móvil es un programa que ejecuta reglas al pie de la letra, y
+por eso a veces te cambia una palabra por otra que no tiene nada que ver. No es que sea tonto: es que
+está haciendo exactamente lo que le mandaron, sin entender lo que estabas diciendo.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 1 · no evaluable</span><p>Por parejas. Uno escribe en un papel las instrucciones para
+dibujar una casa sencilla. El otro las ejecuta <em>literalmente</em>, sin interpretar nada y sin
+preguntar.</p>
+<p>Cuenta cuántas veces has tenido que improvisar porque faltaba una instrucción. Eso que dabas por
+supuesto es justo lo que hay que escribir cuando programas.</p></div></div></details>
+<details class="seccion" id="t2"><summary><span class="num">2</span>Las piezas de un programa<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>En un entorno de bloques todo ocurre sobre un <a class="termino" href="glosario.html#escenario" title="Escenario: El fondo sobre el que ocurre el programa. También puede tener sus propios bloques.">escenario</a>, y en él viven los
+<a class="termino" href="glosario.html#objeto-programa" title="Objeto: Cada elemento del programa que puede moverse, cambiar de aspecto o reaccionar: un personaje, una pelota, un botón.">objetos</a>: personajes, pelotas, botones, cualquier cosa que se mueva o reaccione.
+Cada objeto tiene <strong>sus propios bloques</strong>, y eso es importante: si le das una orden al
+objeto equivocado, no pasará nada y pensarás que el programa está roto.</p>
+<p>Los bloques vienen agrupados por categorías, y el color te dice de qué tipo es cada uno:</p>
+<ul>
+<li><strong>Movimiento y apariencia:</strong> mover, girar, cambiar de aspecto o de tamaño.</li>
+<li><strong>Eventos:</strong> cuándo empieza a ejecutarse algo.</li>
+<li><strong>Control:</strong> repetir, esperar, decidir.</li>
+<li><strong>Sensores:</strong> preguntar por lo que está pasando (¿toca el borde?, ¿se pulsó una
+tecla?).</li>
+<li><strong>Operadores:</strong> sumar, comparar, unir textos.</li>
+<li><strong>Variables:</strong> guardar datos que cambian.</li>
+</ul>
+<h4>Todo empieza con un evento</h4>
+<p>Un montón de bloques sueltos no hace nada. Para que se ejecute necesita engancharse a un
+<a class="termino" href="glosario.html#evento" title="Evento: Algo que ocurre y hace que el programa reaccione: pulsar una tecla, hacer clic, recibir un mensaje o chocar con algo.">evento</a>: al hacer clic en la bandera verde, al pulsar una tecla, al recibir un mensaje. El evento
+es el interruptor que enciende esa pila de instrucciones.</p>
+<p>Un mismo programa puede tener varias pilas que se ejecutan a la vez, cada una con su evento. Ahí
+está buena parte de su potencia, y también buena parte de los líos.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 2 · no evaluable</span><p>Abre uno de los proyectos de ejemplo del entorno y examínalo
+sin tocar nada. Anota: cuántos objetos tiene, qué evento arranca cada pila de bloques, y qué categorías
+de bloques aparecen. Después cambia <strong>un solo</strong> número y predice qué pasará antes de
+ejecutarlo.</p></div></div></details>
+<details class="seccion" id="t3"><summary><span class="num">3</span>El orden importa: secuencia y algoritmos<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un <a class="termino" href="glosario.html#algoritmo" title="Algoritmo: Secuencia ordenada y finita de pasos que resuelve un problema. Una receta de cocina es un algoritmo.">algoritmo</a> es la serie ordenada de pasos que resuelve un problema. El
+programa es ese algoritmo ya traducido a bloques; el algoritmo es la idea, y la idea va primero.</p>
+<p>Pensarlo antes de tocar el ordenador ahorra muchísimo tiempo. Hay tres formas de expresarlo:</p>
+<ul>
+<li><strong>Lenguaje natural ordenado:</strong> los pasos numerados, escritos como frases. Rápido y
+suficiente para algo corto.</li>
+<li><strong><a class="termino" href="glosario.html#pseudocodigo" title="Pseudocódigo: Escritura de un algoritmo en lenguaje natural ordenado, sin las reglas estrictas de un lenguaje de programación.">pseudocódigo</a>:</strong> lenguaje normal pero con sangrías, que ya se parece a un
+programa.</li>
+<li><strong><a class="termino" href="glosario.html#diagrama-flujo" title="Diagrama de flujo: Representación gráfica de un algoritmo mediante símbolos normalizados unidos por flechas.">diagrama de flujo</a>:</strong> el algoritmo dibujado con símbolos. Es el que mejor enseña
+las decisiones y las repeticiones, porque se ven de un vistazo.</li>
+</ul>
+<p>La secuencia parece lo más fácil y es donde más gente falla: cambiar dos pasos de orden puede
+arruinar el resultado aunque todas las instrucciones sean correctas.</p><figure class="esquema"><div class="esquema-lienzo"><svg viewBox="0 0 800 372" role="img" aria-label="A la izquierda los cuatro símbolos básicos; a la derecha, un algoritmo real de control." xmlns="http://www.w3.org/2000/svg">
+<text x="140" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">LOS SÍMBOLOS</text>
+<g stroke="var(--tinta)" stroke-width="2" fill="var(--papel-2)">
+<rect x="60" y="50" width="160" height="38" rx="19"/>
+<rect x="60" y="108" width="160" height="38"/>
+<path d="M 140 166 L 220 194 L 140 222 L 60 194 Z"/>
+<path d="M 78 242 h 160 l -18 38 h -160 z"/>
+</g>
+<text x="140" y="74" text-anchor="middle" class="svg-lbl">Inicio / Fin</text>
+<text x="140" y="132" text-anchor="middle" class="svg-lbl">Proceso</text>
+<text x="140" y="199" text-anchor="middle" class="svg-lbl">¿Decisión?</text>
+<text x="146" y="266" text-anchor="middle" class="svg-lbl">Entrada / Salida</text>
+<line x1="288" y1="15" x2="288" y2="350" stroke="var(--linea)" stroke-dasharray="6 4"/>
+<text x="552" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">EJEMPLO: RIEGO AUTOMÁTICO DE UN ARROZAL</text>
+<g stroke="var(--tinta)" stroke-width="2" fill="var(--papel-2)">
+<rect x="477" y="46" width="150" height="34" rx="17"/>
+<path d="M 452 102 h 218 l -18 34 h -218 z"/>
+<path d="M 552 150 L 660 186 L 552 222 L 444 186 Z" fill="var(--verde-suave)"/>
+<rect x="316" y="240" width="128" height="36"/>
+<rect x="660" y="240" width="128" height="36"/>
+<rect x="477" y="300" width="150" height="34" rx="17"/>
+</g>
+<text x="552" y="68" text-anchor="middle" class="svg-lbl">INICIO</text>
+<text x="556" y="124" text-anchor="middle" class="svg-lbl">Leer sensor de humedad</text>
+<text x="552" y="182" text-anchor="middle" class="svg-lbl">¿Humedad</text>
+<text x="552" y="198" text-anchor="middle" class="svg-lbl">menor del 60 %?</text>
+<text x="380" y="263" text-anchor="middle" class="svg-lbl">Abrir válvula</text>
+<text x="724" y="263" text-anchor="middle" class="svg-lbl">Cerrar válvula</text>
+<text x="552" y="322" text-anchor="middle" class="svg-lbl">Esperar 10 min</text>
+<g stroke="var(--linea)" stroke-width="2" fill="none" marker-end="url(#df)">
+<line x1="552" y1="80" x2="552" y2="98"/>
+<line x1="552" y1="136" x2="552" y2="146"/>
+<path d="M 444 186 H 380 V 236"/>
+<path d="M 660 186 H 724 V 236"/>
+<path d="M 380 276 V 317 H 473"/>
+<path d="M 724 276 V 317 H 631"/>
+<path d="M 552 334 V 356 H 306 V 119 H 448" stroke-dasharray="5 4"/>
+</g>
+<text x="398" y="178" class="svg-lbl-b" fill="var(--verde-txt)">Sí</text>
+<text x="676" y="178" class="svg-lbl-b" fill="var(--ambar-txt)">No</text>
+<defs><marker id="df" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--linea)"/></marker></defs>
+</svg></div><figcaption>A la izquierda los cuatro símbolos básicos; a la derecha, un algoritmo real de control.</figcaption></figure><div class="caja caja-coria"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--verde-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 l6 -3 l6 3 l6 -3 v15 l-6 3 l-6 -3 l-6 3 z M9 3 v15 M15 6 v15"/></svg> Aquí, en Coria del Río</span><p>La <strong>barcaza</strong> que cruza el Guadalquivir frente al pueblo funciona con
+un algoritmo clarísimo, aunque lo ejecuten personas: esperar a que suban los coches, cerrar la rampa,
+cruzar los doscientos metros, abrir la rampa, dejar salir, y repetir. Tiene secuencia, tiene
+repetición y tiene una condición (si no hay nadie esperando, espera).</p>
+<p>Fíjate en que el orden no es negociable: si abre la rampa antes de llegar a la otra orilla, el
+algoritmo no es que funcione peor, es que es peligroso. En programación pasa lo mismo, solo que las
+consecuencias suelen ser menos húmedas.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 3 · no evaluable</span><p>Escribe el algoritmo de algo que hagas todos los días
+(preparar un bocadillo, entrar al instituto por la mañana) con al menos ocho pasos. Después dibújalo
+como diagrama de flujo e incluye al menos una decisión.</p></div></div></details>
+<details class="seccion" id="t4"><summary><span class="num">4</span>Repetir y decidir<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Con la secuencia sola puedes hacer poco. Lo que convierte una lista de órdenes en
+un programa de verdad son dos estructuras más.</p>
+<p>Un <a class="termino" href="glosario.html#bucle" title="Bucle: Instrucción que repite un bloque de código un número de veces o mientras se cumpla una condición.">bucle</a> repite. Los hay de dos tipos: repetir un número fijo de veces, o repetir
+<em>mientras</em> se cumpla algo. Sirven para no escribir cuarenta veces el mismo bloque, y también
+para que el programa siga vivo esperando a que ocurra algo.</p>
+<p>Un <a class="termino" href="glosario.html#condicional" title="Condicional: Instrucción que hace que el programa elija entre dos caminos según se cumpla o no una condición.">condicional</a> decide. Comprueba si algo es cierto y, según la respuesta, ejecuta unos
+bloques u otros. Es lo que hace que un programa reaccione en lugar de limitarse a recitar.</p>
+<p>Cuando encajas una dentro de otra empieza lo interesante: un bucle que dentro lleva una condición
+es, literalmente, un programa que vigila algo continuamente y actúa cuando toca. Eso es exactamente lo
+que hará tu robot en la UD3.</p><figure class="esquema"><div class="esquema-lienzo"><svg viewBox="0 0 800 285" role="img" aria-label="Las tres estructuras con las que se construye cualquier programa. El encaje de las piezas te impide colocarlas en un orden imposible." xmlns="http://www.w3.org/2000/svg"><text x="130" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">SECUENCIA</text>
+<text x="400" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--ambar-txt)">REPETICIÓN</text>
+<text x="670" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--ambar-txt)">CONDICIÓN</text>
+<line x1="265" y1="16" x2="265" y2="290" stroke="var(--linea)" stroke-dasharray="6 4"/>
+<line x1="535" y1="16" x2="535" y2="290" stroke="var(--linea)" stroke-dasharray="6 4"/><path d="M 48,50 h 10 l 6,6 h 14 l 6,-6 h 132 v 38 h -132 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="62" y="73" class="svg-bloque" style="font-size:13px">avanza 10 pasos</text><path d="M 48,88 h 10 l 6,6 h 14 l 6,-6 h 132 v 38 h -132 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="62" y="111" class="svg-bloque" style="font-size:13px">gira 90 grados</text><path d="M 48,126 h 10 l 6,6 h 14 l 6,-6 h 132 v 38 h -132 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="62" y="149" class="svg-bloque" style="font-size:13px">avanza 10 pasos</text><text x="130" y="212" text-anchor="middle" class="svg-lbl">Una orden detrás de otra,</text>
+<text x="130" y="230" text-anchor="middle" class="svg-lbl">siempre en el mismo orden.</text>
+<text x="130" y="258" text-anchor="middle" class="svg-lbl-b">Dibuja media vuelta.</text><path d="M 300,50 h 10 l 6,6 h 14 l 6,-6 h 152 v 36 h -152 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="314" y="72" class="svg-bloque" style="font-size:13px">repetir 4 veces</text><rect x="300" y="86" width="18" height="40" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><path d="M 300,126 h 10 l 6,6 h 14 l 6,-6 h 80 v 30 h -80 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="314" y="145" class="svg-bloque" style="font-size:13px"></text><path d="M 318,86 h 10 l 6,6 h 14 l 6,-6 h 120 v 36 h -120 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="332" y="108" class="svg-bloque" style="font-size:12px">avanza 10 pasos</text><text x="400" y="212" text-anchor="middle" class="svg-lbl">Lo de dentro se ejecuta</text>
+<text x="400" y="230" text-anchor="middle" class="svg-lbl">varias veces seguidas.</text>
+<text x="400" y="258" text-anchor="middle" class="svg-lbl-b">Dibuja un cuadrado.</text><path d="M 570,50 h 10 l 6,6 h 14 l 6,-6 h 160 v 36 h -160 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="584" y="72" class="svg-bloque" style="font-size:13px">si ¿tocando el borde?</text><rect x="570" y="86" width="18" height="40" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><path d="M 570,126 h 10 l 6,6 h 14 l 6,-6 h 85 v 30 h -85 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="584" y="145" class="svg-bloque" style="font-size:13px"></text><path d="M 588,86 h 10 l 6,6 h 14 l 6,-6 h 120 v 36 h -120 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="602" y="108" class="svg-bloque" style="font-size:12px">gira 180 grados</text><text x="670" y="212" text-anchor="middle" class="svg-lbl">Lo de dentro solo se ejecuta</text>
+<text x="670" y="230" text-anchor="middle" class="svg-lbl">si se cumple la condición.</text>
+<text x="670" y="258" text-anchor="middle" class="svg-lbl-b">Rebota al llegar al borde.</text></svg></div><figcaption>Las tres estructuras con las que se construye cualquier programa. El encaje de las piezas te impide colocarlas en un orden imposible.</figcaption></figure><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>El microondas es un bucle con una condición dentro: mientras quede tiempo,
+sigue calentando; si abres la puerta, para. Y cuando el bucle termina, pita. Todo lo que verás este
+curso está ya en ese aparato.</p></div><div class="caja caja-seg"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--rojo)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 l8 3 v6 c0 5 -4 8 -8 9 c-4 -1 -8 -4 -8 -9 V6 z"/></svg> Atención</span><p>Cuidado con el <a class="termino" href="glosario.html#bucle-infinito" title="Bucle infinito: Repetición cuya condición de salida no se cumple nunca, por lo que el programa se queda dando vueltas y deja de responder.">bucle infinito</a>: si la condición para salir no se cumple
+nunca, el programa se queda dando vueltas y deja de responder. No rompe nada, pero tendrás que pararlo
+a mano. Cada vez que escribas un «repetir mientras», pregúntate: <strong>¿qué tendría que pasar para
+que esto termine?</strong> Si no sabes responder, todavía no está bien pensado.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 4 · no evaluable</span><p>Haz que un objeto dibuje un cuadrado usando cuatro bloques de
+avanzar y cuatro de girar. Después reescríbelo con un bucle. Cuenta cuántos bloques has ahorrado.</p>
+<p>Ahora cámbialo para que dibuje un triángulo, y luego un hexágono. ¿Qué relación hay entre el número
+de lados y los grados que gira?</p></div></div></details>
+<details class="seccion" id="t5"><summary><span class="num">5</span>Hablar con quien usa el programa<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un programa que solo entiendes tú sirve de poco. La <a class="termino" href="glosario.html#interfaz" title="Interfaz: La parte del programa con la que trata la persona que lo usa: lo que ve, lo que oye y lo que puede tocar o pulsar.">interfaz</a> es la parte con
+la que trata quien lo usa, y diseñarla bien es parte del trabajo, no un adorno final.</p>
+<p>Todo se reduce a <a class="termino" href="glosario.html#entrada-salida" title="Entrada y salida: La entrada es la información que el programa recibe (una tecla, un clic, un sensor). La salida es lo que devuelve (un dibujo, un sonido, un mensaje).">entrada y salida</a>. La <strong>entrada</strong> es lo que el programa recibe: una
+tecla, un clic, una respuesta escrita. La <strong>salida</strong> es lo que devuelve: un mensaje, un
+dibujo, un sonido.</p>
+<p>Cuando preguntas algo, la respuesta hay que guardarla en algún sitio: para eso está una
+<a class="termino" href="glosario.html#variable-prog" title="Variable (programación): Espacio con nombre donde el programa guarda un dato que puede cambiar durante la ejecución.">variable (programación)</a>. Sin guardarla, el programa la recibe y la pierde inmediatamente.</p>
+<h4>Tres reglas para que se entienda</h4>
+<ol>
+<li><strong>Di qué hay que hacer antes de esperar que lo hagan.</strong> Una pantalla inicial con las
+instrucciones vale más que cualquier explicación tuya al lado.</li>
+<li><strong>Responde siempre.</strong> Si alguien pulsa algo y no pasa nada visible, pensará que está
+roto. Un sonido o un cambio de color bastan.</li>
+<li><strong>Prueba con alguien que no sepa nada.</strong> Tú no puedes evaluar tu propia interfaz: ya
+sabes cómo funciona.</li>
+</ol><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 5 · no evaluable</span><p>Coge el programa del cuadrado y añádele una pantalla inicial
+que explique qué hace y pida el número de lados. Guarda la respuesta en una variable y úsala para
+dibujar el polígono.</p>
+<p>Después dáselo a un compañero sin decirle nada y observa qué hace. Donde dude, ahí tienes que
+mejorar.</p></div></div></details>
+<details class="seccion" id="t6"><summary><span class="num">6</span>Cuando no funciona<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Tu programa no va a funcionar a la primera. El de nadie funciona a la primera. La
+<a class="termino" href="glosario.html#depuracion" title="Depuración: Proceso de buscar y corregir errores en un programa. En inglés, debugging.">depuración</a> —buscar y arreglar errores— no es lo que haces cuando fallas: es la mitad del oficio,
+y los profesionales le dedican más tiempo que a construir.</p>
+<p>Un método que funciona:</p>
+<ol>
+<li><strong>Consigue que el fallo se repita siempre.</strong> Un error que aparece «a veces» es un
+error que todavía no entiendes.</li>
+<li><strong>Quita cosas.</strong> Ve eliminando bloques hasta quedarte con el trozo mínimo que sigue
+fallando. Ahí está el problema.</li>
+<li><strong>Comprueba lo que das por hecho.</strong> Muestra en pantalla el valor de las variables:
+casi siempre el error está en algo que creías seguro.</li>
+<li><strong>Cambia una sola cosa cada vez.</strong> Si cambias tres y funciona, no sabrás cuál era.</li>
+</ol>
+<p>Y una costumbre que te va a salvar el curso: <strong>guarda una copia antes de cambiar algo
+grande</strong>. Volver atrás debe costarte diez segundos, no una tarde.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Cuando el wifi no va no cambias el router, el cable y el móvil a la vez: vas
+probando de uno en uno hasta dar con el culpable. Depurar es exactamente eso aplicado a un
+programa.</p></div></div></details>
+<div class="bloque-titulo"><h2>Ejercicios evaluables</h2><span class="et">cada uno con su criterio y su rúbrica</span></div>
+<article class="ejercicio" id="e1">
+<h3>Lee, predice y arregla <a class="chip" href="2eso-curriculo.html#c1-3" title="Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.">Criterio 1.3</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.</p>
+<p>Prueba práctica en el aula. Se te darán <strong>tres programas cortos ya
+hechos</strong>, cada uno con un fallo escondido. Para cada uno:</p>
+<ol>
+<li>Léelo sin ejecutarlo y escribe qué crees que hace.</li>
+<li>Ejecútalo y anota qué hace en realidad.</li>
+<li>Encuentra el fallo y corrígelo.</li>
+<li>Explica en una frase por qué fallaba.</li>
+</ol>
+<p>No se valora la rapidez. Se valora que sepas <strong>leer</strong> un programa, que es lo que de
+verdad demuestra que entiendes cómo funciona por dentro.</p>
+<p class="entrega"><strong>Entrega:</strong> Hoja de respuestas + los tres programas corregidos. Individual, en el aula.<br><strong>Instrumento:</strong> Prueba práctica</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Lectura del programa</th><td>No consigue predecir qué hace el programa.</td><td>Predice el comportamiento general pero se pierde en los detalles.</td><td>Predice correctamente lo que hace cada programa.</td><td>Lo predice y además anticipa en qué casos fallaría.</td></tr><tr><th>Localización del fallo</th><td>No encuentra los fallos o señala bloques al azar.</td><td>Encuentra alguno de los tres.</td><td>Encuentra los tres fallos.</td><td>Los encuentra y explica cómo llegó hasta ellos.</td></tr><tr><th>Corrección</th><td>Las correcciones no resuelven el problema.</td><td>Corrige alguno, y en otros rompe algo nuevo.</td><td>Los tres programas quedan funcionando.</td><td>Funcionan y además la solución es más sencilla que el original.</td></tr><tr><th>Explicación</th><td>No explica la causa o la confunde con el síntoma.</td><td>Explica qué pasaba, pero no por qué.</td><td>Explica correctamente la causa de cada fallo.</td><td>Explica la causa usando el vocabulario técnico correcto.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e1"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e2">
+<h3>Tu primer proyecto <a class="chip" href="2eso-curriculo.html#c2-1" title="Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.">Criterio 2.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.</p>
+<p>Por parejas. Elegid un problema y resolvedlo con un programa. Podéis escoger de
+esta lista o proponer otra cosa:</p>
+<ul>
+<li>Un <strong>juego</strong> sencillo de esquivar, atrapar o acertar.</li>
+<li>Una <strong>animación</strong> que cuente algo del pueblo o del río.</li>
+<li>Un <strong>cuestionario</strong> que haga preguntas y lleve la puntuación.</li>
+<li>Una <strong>herramienta</strong> que calcule algo útil para clase.</li>
+</ul>
+<p>Sea cual sea, el programa debe llevar obligatoriamente:</p>
+<ol>
+<li>Una secuencia de al menos cinco instrucciones encadenadas.</li>
+<li>Al menos un bucle.</li>
+<li>Al menos una condición.</li>
+<li>Una pantalla que explique a quien lo use qué tiene que hacer.</li>
+<li>Una variable que guarde algo (la puntuación, una respuesta, un contador).</li>
+</ol>
+<p>Antes de tocar el ordenador entregad el <strong>algoritmo en papel</strong>. Y al terminar,
+guardadlo todo en vuestro portfolio: el algoritmo, el programa, una captura y tres líneas contando qué
+se os atascó.</p>
+<p class="entrega"><strong>Entrega:</strong> Proyecto ejecutable + algoritmo en papel + ficha de portfolio. Por parejas.<br><strong>Instrumento:</strong> Proyecto o producto final</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Funcionamiento</th><td>El programa no llega a ejecutarse o no hace lo previsto.</td><td>Funciona a medias o se bloquea con facilidad.</td><td>Funciona de principio a fin sin fallos.</td><td>Funciona y aguanta bien que quien lo use haga cosas raras.</td></tr><tr><th>Uso de las estructuras</th><td>Faltan estructuras o están usadas donde no hacen falta.</td><td>Están las tres, pero alguna forzada para cumplir el requisito.</td><td>Secuencia, bucle y condición usados con sentido.</td><td>Usados con sentido y el programa es notablemente más corto gracias a ellos.</td></tr><tr><th>Interacción con quien lo usa</th><td>No se entiende qué hay que hacer.</td><td>Hay instrucciones, pero incompletas o confusas.</td><td>Se entiende sin que nadie lo explique al lado.</td><td>Se entiende, responde a cada acción y se ha probado con alguien ajeno.</td></tr><tr><th>Del algoritmo al programa</th><td>No hay algoritmo previo, o no tiene relación con lo programado.</td><td>Hay algoritmo pero el programa se aleja bastante de él.</td><td>El programa se corresponde con el algoritmo entregado.</td><td>Se corresponde, y las diferencias están justificadas por lo aprendido al probar.</td></tr><tr><th>Trabajo en pareja</th><td>El trabajo recae en una sola persona.</td><td>Reparto desigual o descoordinado.</td><td>Ambos participan y saben explicar el proyecto entero.</td><td>Reparto equilibrado, se ayudan y se nota coordinación en el resultado.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e2"> Marcar como entregado</label>
+</article>
+<section class="resumen"><h2>Lo esencial de esta unidad</h2><ul><li>Un programa es una lista de instrucciones que la máquina ejecuta al pie de la letra: no supone nada.</li><li>Los lenguajes de bloques evitan errores de escritura, pero se quedan cortos en proyectos grandes.</li><li>Objetos, escenario y categorías de bloques; nada se ejecuta si no lo arranca un evento.</li><li>El algoritmo va antes que el programa, y se puede expresar en pasos, en pseudocódigo o en diagrama de flujo.</li><li>Secuencia, bucle y condición: con esas tres estructuras se construye cualquier programa.</li><li>La interfaz es parte del trabajo: entrada, salida y mensajes que se entiendan sin ayuda.</li><li>Depurar es la mitad del oficio: reproducir el fallo, reducir, comprobar y cambiar una cosa cada vez.</li></ul></section>
+<nav class="nav-ud"><a href="index.html"><small>←</small>Portada de 2.º ESO</a><a href="2eso-ud02.html" style="text-align:right"><small>Unidad siguiente →</small>UD2. Por dentro del ordenador</a></nav>
+</main>
+<footer>
+  <div class="pie-int">
+    <span>Computación y Robótica · 2.º ESO · Coria del Río (Sevilla)</span>
+    <span><a href="index.html">Inicio</a> · <a href="glosario.html">Glosario</a></span>
+  </div>
+  <div class="pie-lic">
+<p><strong>Computación y Robótica · 2.º ESO</strong>, de Emilio Rubio, está bajo licencia
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">CC BY-NC-SA 4.0</a>. Puedes copiarlo, distribuirlo y adaptarlo
+<strong>sin fines comerciales</strong>, siempre que cites la autoría y compartas el resultado con
+esta misma licencia.</p>
+<p class="lic-nota">Quedan fuera de esta licencia los textos literales del currículo oficial, que
+proceden de la normativa de la Junta de Andalucía, y cualquier material de terceros que aparezca
+citado con su propia licencia.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

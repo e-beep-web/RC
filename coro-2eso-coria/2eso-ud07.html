@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD7. Datos masivos · 2.º ESO</title>
+<meta name="description" content="Qué se puede saber juntando muchos datos pequeños">
+<meta name="author" content="Emilio Rubio">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='19'>&#9881;</text></svg>">
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a class="marca" href="index.html">
+      <span class="sello">CYR·2</span>
+      <span>Computación y Robótica<small>2.º ESO · Coria del Río (Sevilla)</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">2.º ESO</a><a href="2eso-curriculo.html">Currículo</a><a href="2eso-rubricas.html">Rúbricas</a><a href="2eso-presentacion.html">Presentación</a><a href="2eso-diagnostico.html">¿Qué sé ya?</a><a href="glosario.html">Glosario</a>
+      <button type="button" data-tema-bt aria-pressed="false" title="Cambiar entre modo claro y oscuro">Tema</button>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="cabecera-ud">
+<p class="eyebrow">2.º ESO · Unidad 7 · 1.ª vuelta</p>
+<h1>Datos masivos</h1>
+<p class="subtitulo">Qué se puede saber juntando muchos datos pequeños</p>
+<p>En la UD4 pusiste sensores a medir. Ahora imagina esos sensores multiplicados por
+millones, funcionando día y noche: contadores de luz, móviles, cámaras de tráfico, tarjetas de
+transporte, compras, búsquedas.</p>
+<p>Eso es el big data, y es lo que hace posible casi todo lo que verás en la siguiente unidad sobre
+inteligencia artificial. Pero antes de usar los datos hay que entenderlos: de qué tipo son, qué llevan
+escondido y qué se puede deducir de ellos.</p>
+<div class="ficha">
+  <span class="dato"><b>5</b> sesiones</span>
+  <span class="dato"><b>5</b> apartados de teoría</span>
+  <span class="dato"><b>4</b> ejercicios evaluables</span>
+</div>
+<div class="ficha" style="margin-top:.6rem"><span class="dato">Criterios</span><a class="chip" href="2eso-curriculo.html#c4-1" title="Conocer las aplicaciones actuales del Big Data, así como la naturaleza de los distintos tipos de datos y metadatos generados, siendo capaces de analizarlos, visualizarlos y compararlos, empleando a su vez un espíritu crítico y científico.">4.1</a> <a class="chip" href="2eso-curriculo.html#c6-2" title="Acceder a servicios de intercambio y publicación de información digital aplicando criterios de seguridad y uso responsable.">6.2</a> <a class="chip" href="2eso-curriculo.html#c2-3" title="Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones.">2.3</a> <a class="chip" href="2eso-curriculo.html#c6-1" title="Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red.">6.1</a></div>
+<div class="ficha" style="margin-top:.4rem"><span class="dato">Saberes</span><a class="chip s" href="2eso-curriculo.html#sG-1" title="Aplicaciones del Big data.">G.1</a> <a class="chip s" href="2eso-curriculo.html#sG-2" title="Datos cualitativos y cuantitativos.">G.2</a> <a class="chip s" href="2eso-curriculo.html#sG-3" title="Distinción entre datos y metadatos.">G.3</a> <a class="chip s" href="2eso-curriculo.html#sG-4" title="Ciclo de vida de los metadatos.">G.4</a> <a class="chip s" href="2eso-curriculo.html#sI-4" title="Interacción de plataformas virtuales: vulnerabilidades.">I.4</a> <a class="chip s" href="2eso-curriculo.html#sB-4" title="Aplicaciones de IoT industrial.">B.4</a></div>
+<p class="reto">Un dato tuyo no dice nada. ¿Por qué un millón de datos de un millón de personas dice tantísimo?</p>
+</div>
+<section class="mapa">
+  <h2>Mapa de la unidad</h2>
+  <p class="pista">Línea continua: teoría. Línea discontinua y borde de trazos: ejercicio evaluable y
+  la teoría de la que depende. Toca cualquier nodo para ir a su contenido.</p>
+  <div class="mapa-lienzo"><svg viewBox="0 0 900 450" role="img" aria-label="Mapa conceptual de la unidad 7"><path class="enlace" data-enlace-de="t1" d="M 248 225.0 C 290 225.0 290 65.0 330 65.0"/><path class="enlace" data-enlace-de="t2" d="M 248 225.0 C 290 225.0 290 145.0 330 145.0"/><path class="enlace" data-enlace-de="t3" d="M 248 225.0 C 290 225.0 290 225.0 330 225.0"/><path class="enlace" data-enlace-de="t4" d="M 248 225.0 C 290 225.0 290 305.0 330 305.0"/><path class="enlace" data-enlace-de="t5" d="M 248 225.0 C 290 225.0 290 385.0 330 385.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 65.0 C 600 65.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 145.0 C 600 145.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 225.0 C 600 225.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 305.0 C 600 305.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 385.0 C 600 385.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e3" d="M 556 145.0 C 600 145.0 600 271.0 642 271.0"/><path class="enlace dep" data-enlace-de="e4" d="M 556 225.0 C 600 225.0 600 363.0 642 363.0"/><path class="enlace dep" data-enlace-de="e4" d="M 556 385.0 C 600 385.0 600 363.0 642 363.0"/><g class="nodo centro"><rect class="caja" x="16" y="189.0" width="232" height="72" rx="5"/><text x="132" y="219.0" text-anchor="middle">UD7</text><text x="132" y="239.0" text-anchor="middle" font-size="11.5" font-weight="500">Datos masivos</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t1"><rect class="caja" x="330" y="36.0" width="226" height="58" rx="4"/><text x="443" y="63.0" text-anchor="middle">Qué es el big data</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t2"><rect class="caja" x="330" y="116.0" width="226" height="58" rx="4"/><text x="443" y="143.0" text-anchor="middle">Dos tipos de datos</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t3"><rect class="caja" x="330" y="196.0" width="226" height="58" rx="4"/><text x="443" y="223.0" text-anchor="middle">Datos y metadatos</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t4"><rect class="caja" x="330" y="276.0" width="226" height="58" rx="4"/><text x="443" y="295.5" text-anchor="middle">El ciclo de vida de un</text><text x="443" y="310.5" text-anchor="middle">dato</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t5"><rect class="caja" x="330" y="356.0" width="226" height="58" rx="4"/><text x="443" y="375.5" text-anchor="middle">Publicar y compartir con</text><text x="443" y="390.5" text-anchor="middle">criterio</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e1"><rect class="caja" x="642" y="54.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="70.0" text-anchor="middle">CRITERIO 4.1</text><text x="762" y="82.5" text-anchor="middle">Informe: analiza un</text><text x="762" y="97.5" text-anchor="middle">conjunto de datos</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e2"><rect class="caja" x="642" y="146.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="162.0" text-anchor="middle">CRITERIO 6.2</text><text x="762" y="167.0" text-anchor="middle">Prueba práctica:</text><text x="762" y="182.0" text-anchor="middle">configura y comparte con</text><text x="762" y="197.0" text-anchor="middle">seguridad</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e3"><rect class="caja" x="642" y="238.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="254.0" text-anchor="middle">CRITERIO 2.3</text><text x="762" y="266.5" text-anchor="middle">Coevaluación: prueba la</text><text x="762" y="281.5" text-anchor="middle">app de otro equipo</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e4"><rect class="caja" x="642" y="330.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="346.0" text-anchor="middle">CRITERIO 6.1</text><text x="762" y="358.5" text-anchor="middle">Portfolio: mi rastro y</text><text x="762" y="373.5" text-anchor="middle">mis decisiones</text></g></svg></div>
+  <ul class="mapa-lista"><li><a href="#t1" data-destino="t1"><span class="cod">TEORÍA</span>Qué es el big data</a></li><li><a href="#t2" data-destino="t2"><span class="cod">TEORÍA</span>Dos tipos de datos</a></li><li><a href="#t3" data-destino="t3"><span class="cod">TEORÍA</span>Datos y metadatos</a></li><li><a href="#t4" data-destino="t4"><span class="cod">TEORÍA</span>El ciclo de vida de un dato</a></li><li><a href="#t5" data-destino="t5"><span class="cod">TEORÍA</span>Publicar y compartir con criterio</a></li><li class="tarea"><a href="#e1" data-destino="e1"><span class="cod">EJERCICIO · CRITERIO 4.1</span>Informe: analiza un conjunto de datos</a></li><li class="tarea"><a href="#e2" data-destino="e2"><span class="cod">EJERCICIO · CRITERIO 6.2</span>Prueba práctica: configura y comparte con seguridad</a></li><li class="tarea"><a href="#e3" data-destino="e3"><span class="cod">EJERCICIO · CRITERIO 2.3</span>Coevaluación: prueba la app de otro equipo</a></li><li class="tarea"><a href="#e4" data-destino="e4"><span class="cod">EJERCICIO · CRITERIO 6.1</span>Portfolio: mi rastro y mis decisiones</a></li></ul>
+</section>
+<section class="progreso" data-progreso-ud="2eso7">
+<strong>Tu progreso en esta unidad</strong>
+<div class="barra-p"><div class="relleno"></div></div>
+<span data-progreso-txt style="font-size:.88rem;color:var(--tinta-2)"></span>
+<p class="aviso">Las marcas se guardan solo en este navegador y en este dispositivo: no las ve el
+profesorado y no sustituyen a la entrega real. Si usas un ordenador compartido del aula, es normal que
+no aparezcan. <button type="button" class="bt" data-reset>Desmarcar todo</button></p>
+</section>
+<div class="bloque-titulo"><h2>Teoría</h2><span class="et">5 apartados</span><button type="button" class="bt" data-abrir-todo data-abierto="0" style="margin-left:auto">Desplegar todo</button></div>
+<details class="seccion" id="t1" open><summary><span class="num">1</span>Qué es el big data<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Se llama <a class="termino" href="glosario.html#big-data" title="Big data: Conjuntos de datos tan grandes que no se pueden tratar con las herramientas de siempre, y que se analizan para encontrar patrones.">big data</a> a conjuntos de datos tan grandes o que llegan tan deprisa
+que no se pueden tratar con las herramientas de siempre. No es solo cuestión de tamaño: importa también
+la <strong>velocidad</strong> a la que llegan y la <strong>variedad</strong> de formatos mezclados.</p>
+<p>Lo interesante no es acumular. Es que al juntar muchos datos aparecen <strong>patrones que en los
+datos sueltos no se ven</strong>. Que tú compres pan un martes no significa nada; que cien mil personas
+compren más pan los martes por la tarde es información que cambia cómo se organiza una panadería.</p>
+<h4>Dónde se usa de verdad</h4>
+<ul>
+<li><strong>Salud:</strong> detectar brotes de una enfermedad antes de que se declaren, comparando
+síntomas de muchos pacientes.</li>
+<li><strong>Transporte:</strong> ajustar los semáforos y las frecuencias de autobús según el tráfico
+real, no según un horario fijo.</li>
+<li><strong>Agricultura:</strong> decidir cuándo regar y cuánto, cruzando humedad del suelo, previsión
+meteorológica e histórico de cosechas.</li>
+<li><strong>Energía:</strong> predecir el consumo de mañana para producir justo lo necesario.</li>
+<li><strong>Comercio:</strong> recomendarte cosas a partir de lo que han hecho personas parecidas a ti.</li>
+</ul><div class="caja caja-coria"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--verde-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 l6 -3 l6 3 l6 -3 v15 l-6 3 l-6 -3 l-6 3 z M9 3 v15 M15 6 v15"/></svg> Aquí, en Coria del Río</span><p>El cultivo del arroz en la marisma del Guadalquivir es un caso claro. Cada parcela
+genera datos de nivel de agua, salinidad, temperatura y rendimiento; cruzarlos entre miles de hectáreas
+y con el histórico de años anteriores permite decidir cuándo sembrar y cuánta agua usar, en una comarca
+donde el agua es siempre el problema.</p>
+<p>Fíjate en la cadena completa del curso: sensores (UD4), conexión (UD4), datos masivos (aquí) y, en
+la unidad siguiente, un sistema que aprende de ellos.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 1 · no evaluable</span><p>Haz una lista de los datos que has generado hoy sin darte
+cuenta: desde que te has levantado hasta ahora. Piensa en el móvil, el transporte, las compras, el wifi
+del instituto. ¿Cuántos son? ¿Quién los tiene?</p></div></div></details>
+<details class="seccion" id="t2"><summary><span class="num">2</span>Dos tipos de datos<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Antes de analizar nada hay que saber con qué se trabaja, porque no todos los datos
+admiten las mismas operaciones.</p>
+<p>Un <a class="termino" href="glosario.html#dato-cuantitativo" title="Dato cuantitativo: Dato que se expresa con un número y se puede medir o contar: una temperatura, una edad, un número de visitas.">dato cuantitativo</a> es un número que mide o cuenta: una temperatura, una edad, el número de
+visitas. Con ellos puedes hacer medias, sumas y gráficas de evolución.</p>
+<p>Un <a class="termino" href="glosario.html#dato-cualitativo" title="Dato cualitativo: Dato que describe una cualidad y no se mide con números: un color, una opinión, una categoría.">dato cualitativo</a> describe una cualidad: un color, un municipio, una opinión, «sí» o «no».
+Con ellos puedes contar cuántos hay de cada clase y comparar grupos, pero <strong>no tiene sentido
+hacer la media</strong>. La media entre «verde» y «azul» no existe.</p>
+<p>Ese error es más frecuente de lo que parece. Si codificas las respuestas de una encuesta como 1, 2 y
+3, el ordenador te calculará la media encantado, y el resultado no significará nada.</p>
+<h4>Cómo se representan</h4>
+<p>Cada tipo pide su gráfica. Los cuantitativos que cambian en el tiempo, una línea. Los cuantitativos
+que se comparan entre categorías, barras. Los cualitativos, un recuento por categorías. Elegir mal la
+gráfica es la forma más fácil de que un dato correcto cuente una mentira.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Las encuestas de satisfacción del tipo «puntúa del 1 al 5» son un caso híbrido
+tramposo: los números parecen cuantitativos, pero la distancia entre un 4 y un 5 no es necesariamente
+la misma que entre un 1 y un 2. Por eso muchas veces es más honesto decir «el 60 % puntuó 4 o más» que
+dar una media.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 2 · no evaluable</span><p>Clasifica estos datos en cuantitativos o cualitativos y di qué
+gráfica usarías: temperatura diaria de un mes, color favorito de la clase, número de pasos al día,
+municipio de nacimiento y nota de un examen.</p></div></div></details>
+<details class="seccion" id="t3"><summary><span class="num">3</span>Datos y metadatos<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un dato es la información en sí. Un <a class="termino" href="glosario.html#metadatos" title="Metadatos: Datos ocultos que acompañan a un archivo: fecha, modelo de cámara y, a veces, el lugar exacto donde se hizo la foto.">metadato</a> es información
+<strong>sobre</strong> ese dato: quién lo creó, cuándo, dónde, con qué aparato, cuánto ocupa.</p>
+<p>Parecen secundarios y muchas veces dicen más que el dato principal. Una foto es un dato; que esa foto
+se hiciera el martes a las 19:40 en unas coordenadas concretas con un modelo de móvil determinado son
+metadatos. Con la foto sabes qué se ve; con los metadatos sabes dónde estabas y cuándo.</p>
+<p>Lo mismo con un mensaje. El contenido puede ir cifrado y ser ilegible para todos menos para quien lo
+recibe; los metadatos —con quién hablas, cuántas veces, a qué horas— siguen ahí. Reconstruir la vida de
+una persona a partir de sus metadatos es perfectamente posible sin leer ni una sola conversación.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 3 · no evaluable</span><p>Coge una foto tuya y mira sus propiedades para ver qué
+metadatos guarda. Anota todo lo que encuentres. Después busca cómo eliminarlos antes de compartirla y
+compruébalo.</p></div></div></details>
+<details class="seccion" id="t4"><summary><span class="num">4</span>El ciclo de vida de un dato<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Los datos no aparecen y se quedan quietos: recorren un camino, y en cada etapa se
+puede hacer algo bien o mal.</p>
+<ol>
+<li><strong>Creación:</strong> alguien o algo genera el dato. Aquí se decide qué se recoge y qué no; lo
+que no se recoja no existirá después.</li>
+<li><strong>Almacenamiento:</strong> se guarda en algún sitio, con un formato y una organización. Un
+dato mal guardado es un dato perdido.</li>
+<li><strong>Uso:</strong> se consulta, se analiza, se cruza con otros.</li>
+<li><strong>Conservación:</strong> se mantiene mientras haga falta, con copias.</li>
+<li><strong>Eliminación:</strong> cuando ya no sirve, o cuando su dueño lo pide, se borra de verdad.</li>
+</ol>
+<p>Esa última etapa es la que más se incumple. Borrar de verdad cuesta trabajo: hay que acordarse de
+todas las copias, de las copias de seguridad y de los sitios donde se reenvió. Por eso la decisión más
+importante del ciclo es la primera: <strong>no recoger lo que no vas a necesitar</strong>.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 4 · no evaluable</span><p>Elige un dato que genere el instituto (por ejemplo, las faltas
+de asistencia) y recorre su ciclo de vida completo: quién lo crea, dónde se guarda, quién lo usa,
+cuánto debería conservarse y qué debería pasar cuando ya no haga falta.</p></div></div></details>
+<details class="seccion" id="t5"><summary><span class="num">5</span>Publicar y compartir con criterio<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Publicar algo en una plataforma no es lo mismo que enseñárselo a alguien. Al subirlo
+lo entregas a un sistema que lo copiará, lo indexará y lo mostrará a quien sus reglas decidan.</p>
+<p>Cada plataforma tiene sus <a class="termino" href="glosario.html#vulnerabilidad" title="Vulnerabilidad: Fallo de un programa o de un sistema que alguien puede aprovechar para hacer algo que no debería.">vulnerabilidades</a> y sus trampas. Las más habituales:</p>
+<ul>
+<li><strong>Ajustes por defecto abiertos:</strong> muchas cuentas nacen públicas. Si no lo cambias tú,
+nadie lo cambia.</li>
+<li><strong>Enlaces «solo para quien tenga el enlace»:</strong> cualquiera que lo reciba entra, y los
+enlaces se reenvían.</li>
+<li><strong>Permisos heredados:</strong> compartes una carpeta y sin darte cuenta compartes todo lo que
+metas dentro a partir de ese momento.</li>
+<li><strong>Cuentas conectadas:</strong> entrar en un sitio con la cuenta de otro le da acceso a datos
+que quizá no querías.</li>
+</ul>
+<p>Antes de publicar, tres preguntas: <strong>¿quién puede verlo exactamente?</strong>, <strong>¿puedo
+retirarlo?</strong> y <strong>¿me importaría que lo viera alguien dentro de cinco años?</strong></p><div class="caja caja-seg"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--rojo)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 l8 3 v6 c0 5 -4 8 -8 9 c-4 -1 -8 -4 -8 -9 V6 z"/></svg> Atención</span><p>Lo que subes a una plataforma puede haber sido copiado antes de que lo borres.
+Borrar reduce el problema; no lo deshace. Por eso la decisión importante se toma <strong>antes</strong>
+de pulsar publicar, no después.</p></div></div></details>
+<div class="bloque-titulo"><h2>Ejercicios evaluables</h2><span class="et">cada uno con su criterio y su rúbrica</span></div>
+<article class="ejercicio" id="e1">
+<h3>Informe: analiza un conjunto de datos <a class="chip" href="2eso-curriculo.html#c4-1" title="Conocer las aplicaciones actuales del Big Data, así como la naturaleza de los distintos tipos de datos y metadatos generados, siendo capaces de analizarlos, visualizarlos y compararlos, empleando a su vez un espíritu crítico y científico.">Criterio 4.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Conocer las aplicaciones actuales del Big Data, así como la naturaleza de los distintos tipos de datos y metadatos generados, siendo capaces de analizarlos, visualizarlos y compararlos, empleando a su vez un espíritu crítico y científico.</p>
+<p>Se te dará un conjunto de datos reales (meteorología de la comarca, consumo
+energético, datos de población o los que recogiera tu sistema de la UD4). Analízalo y entrega un
+informe.</p>
+<ol>
+<li>Qué datos hay, cuáles son cuantitativos y cuáles cualitativos.</li>
+<li>Qué metadatos acompañan al conjunto: quién lo publicó, cuándo y cómo se recogió.</li>
+<li>Al menos <strong>dos gráficas</strong>, cada una del tipo adecuado, con su explicación.</li>
+<li>Dos conclusiones que se deduzcan de los datos, no de lo que tú creías antes de mirarlos.</li>
+<li>Una advertencia: ¿qué <strong>no</strong> se puede concluir de estos datos? ¿Qué falta?</li>
+</ol>
+<p>Ese último punto es el más importante. Saber lo que unos datos no dicen es tan valioso como saber lo
+que dicen.</p>
+<p class="entrega"><strong>Entrega:</strong> Informe con gráficas. Individual o por parejas.<br><strong>Instrumento:</strong> Informe de análisis</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Clasificación de los datos</th><td>Confunde datos cuantitativos y cualitativos.</td><td>Los clasifica con algún error.</td><td>Clasifica correctamente todos los datos.</td><td>Los clasifica y detecta los casos dudosos, explicando por qué lo son.</td></tr><tr><th>Representación gráfica</th><td>Las gráficas no corresponden al tipo de dato.</td><td>Gráficas correctas pero poco claras.</td><td>Gráficas del tipo adecuado y bien etiquetadas.</td><td>Adecuadas, claras y elegidas justificando por qué esa y no otra.</td></tr><tr><th>Conclusiones</th><td>Las conclusiones no se deducen de los datos.</td><td>Se deducen parcialmente.</td><td>Se deducen con claridad de lo analizado.</td><td>Se deducen y alguna resulta contraria a lo que cabía esperar.</td></tr><tr><th>Espíritu crítico</th><td>No cuestiona los datos.</td><td>Menciona limitaciones genéricas.</td><td>Identifica qué no se puede concluir y qué falta.</td><td>Lo identifica y señala posibles sesgos en cómo se recogieron.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e1"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e2">
+<h3>Prueba práctica: configura y comparte con seguridad <a class="chip" href="2eso-curriculo.html#c6-2" title="Acceder a servicios de intercambio y publicación de información digital aplicando criterios de seguridad y uso responsable.">Criterio 6.2</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Acceder a servicios de intercambio y publicación de información digital aplicando criterios de seguridad y uso responsable.</p>
+<p>Prueba individual ante el ordenador, con cuentas de prueba del aula (nunca con
+las tuyas personales).</p>
+<ol>
+<li><strong>Revisa</strong> la configuración de privacidad de una cuenta de prueba y corrige lo que esté
+abierto de más.</li>
+<li><strong>Comparte</strong> un archivo con tres niveles distintos de acceso y explica la diferencia
+entre ellos.</li>
+<li><strong>Detecta</strong>: se te darán tres situaciones de compartición mal hecha y tendrás que decir
+qué falla y cómo se arregla.</li>
+<li><strong>Publica</strong> un contenido en el espacio del centro con los ajustes correctos.</li>
+</ol>
+<p class="entrega"><strong>Entrega:</strong> Prueba realizada en el aula + hoja de respuestas. Individual.<br><strong>Instrumento:</strong> Prueba práctica</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Configuración de privacidad</th><td>No sabe dónde están los ajustes.</td><td>Los localiza pero no acierta al configurarlos.</td><td>Configura correctamente los ajustes de privacidad.</td><td>Los configura y explica qué implica cada opción.</td></tr><tr><th>Niveles de acceso</th><td>No distingue entre los niveles.</td><td>Los distingue de forma imprecisa.</td><td>Distingue y aplica correctamente los tres niveles.</td><td>Los aplica y elige el adecuado para cada situación real.</td></tr><tr><th>Detección de fallos</th><td>No detecta los problemas.</td><td>Detecta alguno.</td><td>Detecta los tres y propone la corrección.</td><td>Los detecta, los corrige y anticipa otros parecidos.</td></tr><tr><th>Publicación responsable</th><td>Publica sin revisar nada.</td><td>Publica con ajustes incompletos.</td><td>Publica con los ajustes correctos.</td><td>Publica correctamente y documenta qué decidió y por qué.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e2"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e3">
+<h3>Coevaluación: prueba la app de otro equipo <a class="chip" href="2eso-curriculo.html#c2-3" title="Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones.">Criterio 2.3</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones.</p>
+<p>Vais a probar la aplicación que otro equipo construyó en la UD5, como usuarios
+reales y con una pauta de revisión.</p>
+<ol>
+<li><strong>Úsala sin que te expliquen nada.</strong> Anota dónde dudas y dónde te pierdes.</li>
+<li><strong>Intenta romperla</strong>: haz las cosas en el orden equivocado, deja campos vacíos, pulsa
+dos veces. Documenta qué pasa.</li>
+<li>Valora si resuelve de verdad el problema que dice resolver.</li>
+<li>Señala <strong>dos cosas que funcionan bien</strong> y dos mejoras concretas.</li>
+</ol>
+<p>Se evalúa la calidad de tu revisión, no la app que revisas. Y una revisión útil es concreta: «no se
+entiende» no vale; «al pulsar enviar sin escribir nada, la app se queda en blanco y no dice nada» sí.</p>
+<p class="entrega"><strong>Entrega:</strong> Ficha de revisión + respuesta del equipo revisado. Por parejas.<br><strong>Instrumento:</strong> Coevaluación entre iguales</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Prueba como usuario</th><td>Prueba por encima o pide que se lo expliquen.</td><td>Prueba lo básico.</td><td>Prueba a fondo, incluyendo usos no previstos.</td><td>Prueba a fondo y documenta cada fallo con los pasos para reproducirlo.</td></tr><tr><th>Valoración del funcionamiento</th><td>No valora si resuelve el problema.</td><td>Valoración superficial.</td><td>Valora con criterio si la app cumple su propósito.</td><td>Lo valora y distingue entre fallos graves y detalles menores.</td></tr><tr><th>Calidad de las propuestas</th><td>Propuestas vagas o inaplicables.</td><td>Propuestas correctas pero genéricas.</td><td>Mejoras concretas y aplicables.</td><td>Concretas, aplicables y priorizadas.</td></tr><tr><th>Forma de comunicar la crítica</th><td>Descalifica o se limita a decir que está bien.</td><td>Señala fallos sin cuidado en la forma.</td><td>Crítica honesta y expresada con respeto.</td><td>Honesta, respetuosa y que de verdad ayuda a mejorar.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e3"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e4">
+<h3>Portfolio: mi rastro y mis decisiones <a class="chip" href="2eso-curriculo.html#c6-1" title="Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red.">Criterio 6.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red.</p>
+<p>Entrada de portfolio personal sobre tu propia protección en la red. Retoma lo
+que hiciste en la UD5 y actualízalo con lo aprendido aquí.</p>
+<ol>
+<li>Qué cambiaste en tus permisos y ajustes desde la UD5, y qué efecto ha tenido.</li>
+<li>Qué metadatos generas sin darte cuenta, ahora que sabes buscarlos.</li>
+<li>Una decisión concreta que has tomado este trimestre sobre qué publicar o qué no.</li>
+<li>Qué hábito vas a mantener y cuál te cuesta.</li>
+</ol>
+<p>Esta entrada es personal: no tienes que contar nada que no quieras. Se valora la reflexión, no el
+detalle de tu vida privada.</p>
+<p class="entrega"><strong>Entrega:</strong> Entrada de portfolio. Individual.<br><strong>Instrumento:</strong> Portfolio o diario de aprendizaje</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Conciencia del propio rastro</th><td>No identifica qué datos genera.</td><td>Identifica los más evidentes.</td><td>Identifica su rastro, incluidos los metadatos.</td><td>Lo identifica y entiende qué se podría deducir de él.</td></tr><tr><th>Decisiones tomadas</th><td>No ha aplicado nada.</td><td>Ha aplicado algún cambio sin valorarlo.</td><td>Ha aplicado cambios concretos y valora su efecto.</td><td>Cambios aplicados, valorados y con criterio para decidir en el futuro.</td></tr><tr><th>Reflexión</th><td>Respuestas de relleno.</td><td>Reflexión superficial.</td><td>Reflexión honesta sobre sus hábitos.</td><td>Honesta y capaz de reconocer lo que le cuesta y por qué.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e4"> Marcar como entregado</label>
+</article>
+<section class="resumen"><h2>Lo esencial de esta unidad</h2><ul><li>Big data: volumen, velocidad y variedad; lo valioso son los patrones que los datos sueltos no muestran.</li><li>Cuantitativos (números que se miden) y cualitativos (cualidades que se cuentan); cada uno con su gráfica.</li><li>Los metadatos dicen a veces más que el propio dato: fecha, lugar, aparato, con quién y cuándo.</li><li>Ciclo de vida del dato: crear, almacenar, usar, conservar y eliminar. Lo que no se recoge no hay que borrarlo.</li><li>Las plataformas abren por defecto: revisar ajustes, entender los niveles de acceso y decidir antes de publicar.</li></ul></section>
+<nav class="nav-ud"><a href="2eso-ud06.html"><small>← Unidad anterior</small>UD6. Páginas web</a><a href="2eso-ud08.html" style="text-align:right"><small>Unidad siguiente →</small>UD8. Inteligencia artificial</a></nav>
+</main>
+<footer>
+  <div class="pie-int">
+    <span>Computación y Robótica · 2.º ESO · Coria del Río (Sevilla)</span>
+    <span><a href="index.html">Inicio</a> · <a href="glosario.html">Glosario</a></span>
+  </div>
+  <div class="pie-lic">
+<p><strong>Computación y Robótica · 2.º ESO</strong>, de Emilio Rubio, está bajo licencia
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">CC BY-NC-SA 4.0</a>. Puedes copiarlo, distribuirlo y adaptarlo
+<strong>sin fines comerciales</strong>, siempre que cites la autoría y compartas el resultado con
+esta misma licencia.</p>
+<p class="lic-nota">Quedan fuera de esta licencia los textos literales del currículo oficial, que
+proceden de la normativa de la Junta de Andalucía, y cualquier material de terceros que aparezca
+citado con su propia licencia.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

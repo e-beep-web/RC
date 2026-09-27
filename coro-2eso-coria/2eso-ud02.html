@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD2. Por dentro del ordenador · 2.º ESO</title>
+<meta name="description" content="Qué hay debajo de la pantalla y cómo se protege">
+<meta name="author" content="Emilio Rubio">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='19'>&#9881;</text></svg>">
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a class="marca" href="index.html">
+      <span class="sello">CYR·2</span>
+      <span>Computación y Robótica<small>2.º ESO · Coria del Río (Sevilla)</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">2.º ESO</a><a href="2eso-curriculo.html">Currículo</a><a href="2eso-rubricas.html">Rúbricas</a><a href="2eso-presentacion.html">Presentación</a><a href="2eso-diagnostico.html">¿Qué sé ya?</a><a href="glosario.html">Glosario</a>
+      <button type="button" data-tema-bt aria-pressed="false" title="Cambiar entre modo claro y oscuro">Tema</button>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="cabecera-ud">
+<p class="eyebrow">2.º ESO · Unidad 2 · 1.ª vuelta</p>
+<h1>Por dentro del ordenador</h1>
+<p class="subtitulo">Qué hay debajo de la pantalla y cómo se protege</p>
+<p>En la unidad anterior diste órdenes a una máquina. Ahora vas a abrirla.</p>
+<p>Aquí descubrirás que <strong>un ordenador no es una cosa, sino una idea</strong> que se repite en
+tamaños muy distintos: en tu móvil, en el microondas, en el semáforo de la travesía y en el robot que
+programarás dentro de dos unidades. Entender ese esquema común es lo que te permitirá construir tus
+propios sistemas.</p>
+<p>Y ya que estamos dentro, veremos también cómo se protege todo eso: de un apagón y de quien quiera
+estropearlo.</p>
+<div class="ficha">
+  <span class="dato"><b>5</b> sesiones</span>
+  <span class="dato"><b>5</b> apartados de teoría</span>
+  <span class="dato"><b>2</b> ejercicios evaluables</span>
+</div>
+<div class="ficha" style="margin-top:.6rem"><span class="dato">Criterios</span><a class="chip" href="2eso-curriculo.html#c3-1" title="Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible.">3.1</a> <a class="chip" href="2eso-curriculo.html#c6-4" title="Adoptar conductas de seguridad activa y pasiva en la protección de datos y en el intercambio de información.">6.4</a></div>
+<div class="ficha" style="margin-top:.4rem"><span class="dato">Saberes</span><a class="chip s" href="2eso-curriculo.html#sF-1" title="Sistemas de computación: tipologías.">F.1</a> <a class="chip s" href="2eso-curriculo.html#sF-2" title="Microcontroladores: historia.">F.2</a> <a class="chip s" href="2eso-curriculo.html#sF-3" title="Hardware: periféricos de entrada y salida. Software: de base y de aplicación.">F.3</a> <a class="chip s" href="2eso-curriculo.html#sF-4" title="Seguridad eléctrica: sistemas de alimentación ininterrumpida (SAI).">F.4</a> <a class="chip s" href="2eso-curriculo.html#sI-2" title="Tipología de los diferentes riesgos por la exposición de los usuarios.">I.2</a> <a class="chip s" href="2eso-curriculo.html#sI-3" title="Concepto de Malware y antimalware.">I.3</a></div>
+<p class="reto">Un móvil, una lavadora y un semáforo tienen dentro lo mismo. ¿Qué es exactamente?</p>
+</div>
+<section class="mapa">
+  <h2>Mapa de la unidad</h2>
+  <p class="pista">Línea continua: teoría. Línea discontinua y borde de trazos: ejercicio evaluable y
+  la teoría de la que depende. Toca cualquier nodo para ir a su contenido.</p>
+  <div class="mapa-lienzo"><svg viewBox="0 0 900 450" role="img" aria-label="Mapa conceptual de la unidad 2"><path class="enlace" data-enlace-de="t1" d="M 248 225.0 C 290 225.0 290 65.0 330 65.0"/><path class="enlace" data-enlace-de="t2" d="M 248 225.0 C 290 225.0 290 145.0 330 145.0"/><path class="enlace" data-enlace-de="t3" d="M 248 225.0 C 290 225.0 290 225.0 330 225.0"/><path class="enlace" data-enlace-de="t4" d="M 248 225.0 C 290 225.0 290 305.0 330 305.0"/><path class="enlace" data-enlace-de="t5" d="M 248 225.0 C 290 225.0 290 385.0 330 385.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 65.0 C 600 65.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 145.0 C 600 145.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 225.0 C 600 225.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 305.0 C 600 305.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 385.0 C 600 385.0 600 271.0 642 271.0"/><g class="nodo centro"><rect class="caja" x="16" y="189.0" width="232" height="72" rx="5"/><text x="132" y="219.0" text-anchor="middle">UD2</text><text x="132" y="239.0" text-anchor="middle" font-size="11.5" font-weight="500">Por dentro del ordenador</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t1"><rect class="caja" x="330" y="36.0" width="226" height="58" rx="4"/><text x="443" y="55.5" text-anchor="middle">No todos los ordenadores</text><text x="443" y="70.5" text-anchor="middle">parecen ordenadores</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t2"><rect class="caja" x="330" y="116.0" width="226" height="58" rx="4"/><text x="443" y="143.0" text-anchor="middle">El microcontrolador</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t3"><rect class="caja" x="330" y="196.0" width="226" height="58" rx="4"/><text x="443" y="223.0" text-anchor="middle">Hardware y software</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t4"><rect class="caja" x="330" y="276.0" width="226" height="58" rx="4"/><text x="443" y="295.5" text-anchor="middle">Que no se apague:</text><text x="443" y="310.5" text-anchor="middle">seguridad eléctrica</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t5"><rect class="caja" x="330" y="356.0" width="226" height="58" rx="4"/><text x="443" y="368.0" text-anchor="middle">Que no te lo estropeen:</text><text x="443" y="383.0" text-anchor="middle">seguridad activa y</text><text x="443" y="398.0" text-anchor="middle">pasiva</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e1"><rect class="caja" x="642" y="146.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="162.0" text-anchor="middle">CRITERIO 3.1</text><text x="762" y="174.5" text-anchor="middle">Informe: analiza un</text><text x="762" y="189.5" text-anchor="middle">sistema y diseña el tuyo</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e2"><rect class="caja" x="642" y="238.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="254.0" text-anchor="middle">CRITERIO 6.4</text><text x="762" y="266.5" text-anchor="middle">Cuestionario: activa o</text><text x="762" y="281.5" text-anchor="middle">pasiva</text></g></svg></div>
+  <ul class="mapa-lista"><li><a href="#t1" data-destino="t1"><span class="cod">TEORÍA</span>No todos los ordenadores parecen ordenadores</a></li><li><a href="#t2" data-destino="t2"><span class="cod">TEORÍA</span>El microcontrolador</a></li><li><a href="#t3" data-destino="t3"><span class="cod">TEORÍA</span>Hardware y software</a></li><li><a href="#t4" data-destino="t4"><span class="cod">TEORÍA</span>Que no se apague: seguridad eléctrica</a></li><li><a href="#t5" data-destino="t5"><span class="cod">TEORÍA</span>Que no te lo estropeen: seguridad activa y pasiva</a></li><li class="tarea"><a href="#e1" data-destino="e1"><span class="cod">EJERCICIO · CRITERIO 3.1</span>Informe: analiza un sistema y diseña el tuyo</a></li><li class="tarea"><a href="#e2" data-destino="e2"><span class="cod">EJERCICIO · CRITERIO 6.4</span>Cuestionario: activa o pasiva</a></li></ul>
+</section>
+<section class="progreso" data-progreso-ud="2eso2">
+<strong>Tu progreso en esta unidad</strong>
+<div class="barra-p"><div class="relleno"></div></div>
+<span data-progreso-txt style="font-size:.88rem;color:var(--tinta-2)"></span>
+<p class="aviso">Las marcas se guardan solo en este navegador y en este dispositivo: no las ve el
+profesorado y no sustituyen a la entrega real. Si usas un ordenador compartido del aula, es normal que
+no aparezcan. <button type="button" class="bt" data-reset>Desmarcar todo</button></p>
+</section>
+<div class="bloque-titulo"><h2>Teoría</h2><span class="et">5 apartados</span><button type="button" class="bt" data-abrir-todo data-abierto="0" style="margin-left:auto">Desplegar todo</button></div>
+<details class="seccion" id="t1" open><summary><span class="num">1</span>No todos los ordenadores parecen ordenadores<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un sistema de computación es cualquier máquina capaz de recibir datos, procesarlos
+y devolver un resultado. Con esa definición, hay muchos más de los que crees a tu alrededor.</p>
+<ul>
+<li><strong>De propósito general:</strong> tu portátil o el ordenador del aula. Sirven para cualquier
+cosa porque les instalas programas distintos.</li>
+<li><strong>Móviles y tabletas:</strong> también de propósito general, pero pensados para tocarlos con
+los dedos y funcionar con batería.</li>
+<li><strong>Servidores:</strong> ordenadores sin pantalla ni teclado, encendidos siempre, cuyo trabajo
+es atender peticiones de otros. Cuando abres una página web, hablas con uno de ellos.</li>
+<li><strong>Sistemas empotrados:</strong> ordenadores diminutos metidos dentro de otra cosa, con
+<em>una sola</em> tarea. El de tu lavadora solo sabe lavar, y lo hace muy bien.</li>
+</ul>
+<p>La diferencia importante no es el tamaño, sino <strong>cuántas cosas distintas sabe hacer</strong>.
+Un sistema empotrado es simple a propósito: cuesta menos, gasta menos y falla menos.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Cuenta los ordenadores que hay en tu casa. Si has contado dos o tres, te has
+quedado corto: el router, el televisor, el microondas, la lavadora, el termostato de la calefacción, la
+báscula del baño y el mando del aire acondicionado llevan uno dentro. Fácilmente pasan de quince.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 1 · no evaluable</span><p>Recorre el aula y haz una lista de todo lo que lleve un sistema
+de computación dentro. Para cada uno, clasifícalo en uno de los cuatro tipos y di qué datos recibe y
+qué devuelve.</p></div></div></details>
+<details class="seccion" id="t2"><summary><span class="num">2</span>El microcontrolador<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un <a class="termino" href="glosario.html#microcontrolador" title="Microcontrolador: Ordenador diminuto dentro de un único chip, que ejecuta el programa de un robot o de un electrodoméstico.">microcontrolador</a> es un ordenador entero metido en un solo chip: procesador,
+memoria y conexiones, todo junto. Es lo que hay dentro de casi todos los sistemas empotrados, y es lo
+que vas a programar cuando llegues al robot.</p>
+<p>Aparecieron a principios de los años setenta, cuando se consiguió meter en una única pastilla de
+silicio lo que antes ocupaba una placa entera. Eso cambió el mundo más de lo que parece: a partir de
+ahí resultó barato poner inteligencia dentro de cualquier objeto.</p>
+<h4>¿En qué se diferencia de un ordenador?</h4>
+<p>En que no tiene sistema operativo, ni pantalla, ni ratón. Tú le metes <strong>un</strong> programa y
+ese programa se ejecuta desde que lo enchufas hasta que lo desenchufas, siempre igual. No puede hacer
+otra cosa, y por eso es tan fiable.</p>
+<p>A cambio de esa sencillez gana en dos cosas: arranca al instante y consume tan poco que una placa
+como las que usaréis en clase puede funcionar meses con una pila.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Tu ordenador tarda medio minuto en arrancar porque tiene que cargar un sistema
+operativo enorme. El microondas responde en cuanto pulsas, porque su microcontrolador no tiene nada
+que cargar: su único programa ya está ahí.</p></div></div></details>
+<details class="seccion" id="t3"><summary><span class="num">3</span>Hardware y software<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>El <strong>hardware</strong> es todo lo que puedes tocar. El <strong>software</strong>
+son las instrucciones. Ninguno de los dos sirve de nada sin el otro: un ordenador sin programas es un
+pisapapeles caro, y un programa sin máquina es un texto.</p>
+<h4>Los periféricos</h4>
+<p>Todo el hardware que rodea al procesador se llama periférico, y se clasifica según por dónde va la
+información. Los de <strong>entrada</strong> le traen datos: teclado, ratón, micrófono, cámara,
+<a class="termino" href="glosario.html#sensor" title="Sensor: Componente que capta una magnitud del entorno (luz, temperatura, distancia, humedad) y la convierte en una señal eléctrica.">sensores</a>. Los de <strong>salida</strong> sacan resultados: pantalla, altavoz, motor,
+impresora. Algunos hacen las dos cosas, como una pantalla táctil.</p>
+<h4>Las capas del software</h4>
+<p>El <strong>software de base</strong> es el sistema operativo: el que habla directamente con el
+hardware y reparte el trabajo. El <strong>software de aplicación</strong> es lo que tú usas de verdad:
+el navegador, el editor, los juegos. Las aplicaciones no tocan el hardware; se lo piden al sistema
+operativo, que es quien manda.</p>
+<p>Por eso el mismo programa no funciona en cualquier ordenador: no habla con la máquina, habla con el
+sistema operativo, y cada sistema operativo entiende sus propias órdenes.</p><figure class="esquema"><div class="esquema-lienzo"><svg viewBox="0 0 800 372" role="img" aria-label="Entrada, proceso y salida. Debajo, las tres capas: el hardware abajo, el sistema operativo encima y los programas que usas arriba del todo." xmlns="http://www.w3.org/2000/svg"><text x="400" y="28" text-anchor="middle" class="svg-lbl-b">Todo sistema informático hace lo mismo</text><rect x="30" y="62" width="140" height="36" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2"/><text x="100" y="85" text-anchor="middle" class="svg-lbl-b">Teclado</text><line x1="172" y1="80" x2="266" y2="150" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="30" y="108" width="140" height="36" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2"/><text x="100" y="131" text-anchor="middle" class="svg-lbl-b">Ratón</text><line x1="172" y1="126" x2="266" y2="150" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="30" y="154" width="140" height="36" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2"/><text x="100" y="177" text-anchor="middle" class="svg-lbl-b">Micrófono</text><line x1="172" y1="172" x2="266" y2="150" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="30" y="200" width="140" height="36" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2"/><text x="100" y="223" text-anchor="middle" class="svg-lbl-b">Sensor</text><line x1="172" y1="218" x2="266" y2="150" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="630" y="62" width="140" height="36" rx="4" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><text x="700" y="85" text-anchor="middle" class="svg-lbl-b">Pantalla</text><line x1="534" y1="150" x2="624" y2="80" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="630" y="108" width="140" height="36" rx="4" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><text x="700" y="131" text-anchor="middle" class="svg-lbl-b">Altavoz</text><line x1="534" y1="150" x2="624" y2="126" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="630" y="154" width="140" height="36" rx="4" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><text x="700" y="177" text-anchor="middle" class="svg-lbl-b">Motor</text><line x1="534" y1="150" x2="624" y2="172" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="630" y="200" width="140" height="36" rx="4" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><text x="700" y="223" text-anchor="middle" class="svg-lbl-b">LED</text><line x1="534" y1="150" x2="624" y2="218" stroke="var(--linea)" stroke-width="1.8" marker-end="url(#eps)"/><rect x="272" y="96" width="256" height="108" rx="5" fill="var(--papel-2)"
+ stroke="var(--tinta)" stroke-width="2.5"/>
+<text x="400" y="126" text-anchor="middle" class="svg-lbl-b">PROCESADOR</text>
+<text x="400" y="148" text-anchor="middle" class="svg-lbl">recibe, calcula y decide</text>
+<rect x="296" y="160" width="96" height="32" rx="3" fill="var(--papel-3)" stroke="var(--linea)"/>
+<text x="344" y="181" text-anchor="middle" class="svg-lbl">memoria</text>
+<rect x="408" y="160" width="96" height="32" rx="3" fill="var(--papel-3)" stroke="var(--linea)"/>
+<text x="456" y="181" text-anchor="middle" class="svg-lbl">programa</text>
+<text x="100" y="42" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">ENTRADA</text>
+<text x="700" y="42" text-anchor="middle" class="svg-lbl-b" fill="var(--ambar-txt)">SALIDA</text>
+<rect x="30" y="252" width="740" height="34" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2"/>
+<text x="400" y="274" text-anchor="middle" class="svg-lbl-b">SOFTWARE DE APLICACIÓN · lo que tú usas: juegos, navegador, editor</text>
+<rect x="30" y="290" width="740" height="34" rx="4" fill="var(--papel-3)" stroke="var(--linea)" stroke-width="2"/>
+<text x="400" y="312" text-anchor="middle" class="svg-lbl-b">SOFTWARE DE BASE · el sistema operativo, que habla con el hardware</text>
+<rect x="30" y="328" width="740" height="30" rx="4" fill="var(--papel-2)" stroke="var(--tinta)" stroke-width="2"/>
+<text x="400" y="348" text-anchor="middle" class="svg-lbl-b">HARDWARE · las piezas que puedes tocar</text>
+<defs><marker id="eps" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+<path d="M0,0 L9,4.5 L0,9 z" fill="var(--linea)"/></marker></defs></svg></div><figcaption>Entrada, proceso y salida. Debajo, las tres capas: el hardware abajo, el sistema operativo encima y los programas que usas arriba del todo.</figcaption></figure><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 2 · no evaluable</span><p>Coge un aparato que uses a diario y descríbelo en tres
+columnas: qué periféricos de entrada tiene, qué hace por dentro y qué periféricos de salida usa.
+Prueba con un cajero automático, una consola o un coche moderno.</p></div></div></details>
+<details class="seccion" id="t4"><summary><span class="num">4</span>Que no se apague: seguridad eléctrica<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un ordenador que se queda sin corriente de golpe no solo se apaga: puede perder lo
+que estabas haciendo y, en el peor caso, corromper archivos que estaban escribiéndose en ese
+momento.</p>
+<p>Para eso existe el <a class="termino" href="glosario.html#sai" title="SAI: Sistema de alimentación ininterrumpida: una batería que mantiene el equipo encendido unos minutos si se va la luz, y que además estabiliza la corriente.">sai</a>. Es una batería con electrónica que se coloca entre el enchufe y el
+equipo. Si se va la luz, el SAI sigue alimentando el equipo unos minutos: los suficientes para guardar
+el trabajo y apagarlo en condiciones. Los buenos, además, avisan al ordenador para que se apague solo
+si nadie está delante.</p>
+<p>Y hacen una segunda cosa menos conocida y más importante: <strong>estabilizan la corriente</strong>.
+Las subidas y bajadas de tensión no apagan nada, pero van deteriorando los componentes hasta que un día
+fallan sin motivo aparente.</p><div class="caja caja-coria"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--verde-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 l6 -3 l6 3 l6 -3 v15 l-6 3 l-6 -3 l-6 3 z M9 3 v15 M15 6 v15"/></svg> Aquí, en Coria del Río</span><p>Las estaciones de bombeo que mantienen drenada la marisma del Guadalquivir no
+pueden permitirse un corte de luz en plena crecida: si las bombas se paran, el agua entra. Por eso
+llevan alimentación de respaldo y sistemas de control redundantes. Es el mismo problema que tienes tú
+con un trabajo sin guardar, multiplicado por unas cuantas miles de hectáreas.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 3 · no evaluable</span><p>Busca qué equipos del instituto crees que deberían tener SAI y
+cuáles no lo necesitan. Justifica cada decisión: ¿qué se perdería exactamente si a ese equipo se le
+fuera la luz?</p></div></div></details>
+<details class="seccion" id="t5"><summary><span class="num">5</span>Que no te lo estropeen: seguridad activa y pasiva<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>El <a class="termino" href="glosario.html#malware" title="Malware: Cualquier programa creado para dañar un equipo o robar información.">malware</a> es cualquier programa hecho para dañar un equipo o robar
+información. Tiene muchas formas —virus, troyanos, programas que cifran tus archivos y piden dinero— y
+todas comparten algo: casi ninguna entra sola. Entra porque alguien la deja pasar.</p>
+<p>Frente a eso hay dos tipos de medidas, y conviene no confundirlas:</p>
+<ul>
+<li>La <strong>seguridad activa</strong> intenta que el problema no ocurra: antivirus actualizado,
+sistema al día, contraseñas fuertes, desconfiar de lo que llega sin esperarlo.</li>
+<li>La <strong>seguridad pasiva</strong> reduce el daño cuando ya ha ocurrido: <a class="termino" href="glosario.html#copia-seguridad" title="Copia de seguridad: Duplicado de tus archivos guardado en otro sitio, para poder recuperarlos si el original se pierde.">copia de seguridad</a>,
+tener los datos en más de un sitio, saber cómo restaurar.</li>
+</ul>
+<p>Mucha gente solo practica la activa, y es un error. La activa falla alguna vez —siempre falla alguna
+vez— y ese día lo único que te salva es la pasiva.</p><div class="caja caja-seg"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--rojo)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 l8 3 v6 c0 5 -4 8 -8 9 c-4 -1 -8 -4 -8 -9 V6 z"/></svg> Atención</span><p>Dos reglas prácticas para todo el curso: <strong>lo que llega sin esperarlo se
+mira dos veces</strong> (un enlace, un archivo adjunto, un pendrive que aparece), y
+<strong>actualizar no es una molestia, es la defensa más barata que existe</strong>. Casi todos los
+ataques reales aprovechan fallos ya conocidos y ya corregidos en equipos que nadie actualizó.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 4 · no evaluable</span><p>Clasifica estas medidas en activas o pasivas y explica por qué:
+antivirus, copia en la nube, contraseña larga, verificación en dos pasos, tener el trabajo también en
+un pendrive, y actualizar el móvil.</p></div></div></details>
+<div class="bloque-titulo"><h2>Ejercicios evaluables</h2><span class="et">cada uno con su criterio y su rúbrica</span></div>
+<article class="ejercicio" id="e1">
+<h3>Informe: analiza un sistema y diseña el tuyo <a class="chip" href="2eso-curriculo.html#c3-1" title="Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible.">Criterio 3.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible.</p>
+<p>Este ejercicio es de papel: todavía no vas a construir nada, vas a
+<strong>entender</strong> cómo se construye. Entrega un informe con dos partes.</p>
+<p><strong>Primera parte: analiza.</strong> Elige un sistema de computación real de tu entorno (un
+semáforo, un cajero, la puerta automática de un supermercado, una máquina de vending) y describe qué
+tipo de sistema es, qué periféricos de entrada y de salida tiene, qué decide por dentro y qué pasaría
+si se quedara sin corriente.</p>
+<p><strong>Segunda parte: diseña.</strong> Propón un sistema sencillo que resuelva un problema real del
+instituto o del pueblo. Indica qué entradas necesitaría, qué haría con ellas, qué salidas tendría, y
+justifica por qué lo harías con un microcontrolador y no con un ordenador completo.</p>
+<p>Añade un apartado breve de sostenibilidad: cuánta energía consumiría y qué pasaría con el aparato al
+final de su vida.</p>
+<p class="entrega"><strong>Entrega:</strong> Informe con esquema dibujado a mano o digital. Individual.<br><strong>Instrumento:</strong> Informe de análisis</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Análisis del sistema existente</th><td>Describe el aparato por fuera, sin identificar sus partes.</td><td>Identifica algunas entradas y salidas.</td><td>Identifica correctamente entradas, proceso y salidas.</td><td>Las identifica y explica por qué se eligieron esos componentes y no otros.</td></tr><tr><th>Diseño propuesto</th><td>La propuesta no es un sistema de computación o no resuelve nada.</td><td>Propone algo razonable pero sin concretar sus partes.</td><td>Propuesta completa, con entradas, proceso y salidas definidos.</td><td>Completa, viable y con el problema justificado con datos del entorno.</td></tr><tr><th>Justificación técnica</th><td>No explica por qué elige cada componente.</td><td>Justifica de forma vaga.</td><td>Justifica la elección del microcontrolador y de los periféricos.</td><td>La justifica comparándola con alternativas que descarta motivadamente.</td></tr><tr><th>Sostenibilidad</th><td>No la considera.</td><td>La menciona sin concretar.</td><td>Valora consumo y fin de vida del aparato.</td><td>Los valora y propone una decisión de diseño que reduce el impacto.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e1"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e2">
+<h3>Cuestionario: activa o pasiva <a class="chip" href="2eso-curriculo.html#c6-4" title="Adoptar conductas de seguridad activa y pasiva en la protección de datos y en el intercambio de información.">Criterio 6.4</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Adoptar conductas de seguridad activa y pasiva en la protección de datos y en el intercambio de información.</p>
+<p>Cuestionario individual sobre protección de datos e intercambio de información.
+Tiene dos partes.</p>
+<ol>
+<li><strong>Preguntas cerradas</strong> sobre malware, antimalware y clasificación de medidas en
+seguridad activa y pasiva.</li>
+<li><strong>Tres casos prácticos</strong> en los que tendrás que decir qué harías y, sobre todo,
+<strong>por qué</strong>. En estos no basta con acertar: se valora el razonamiento.</li>
+</ol>
+<p>Ejemplo del tipo de caso: «Un compañero te pasa por Bluetooth un archivo que dice que es el trabajo
+de clase, pero pesa mucho más de lo normal. ¿Qué haces y qué medidas tenías que haber tomado
+antes?».</p>
+<p class="entrega"><strong>Entrega:</strong> Cuestionario resuelto en el aula. Individual.<br><strong>Instrumento:</strong> Cuestionario</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Conocimiento de los riesgos</th><td>Confunde los conceptos básicos de malware.</td><td>Reconoce los riesgos más evidentes.</td><td>Identifica correctamente los tipos de riesgo y de malware.</td><td>Los identifica y reconoce por qué unos son más peligrosos que otros.</td></tr><tr><th>Distinción activa / pasiva</th><td>No distingue ambos tipos de medida.</td><td>Los distingue con errores frecuentes.</td><td>Clasifica correctamente las medidas.</td><td>Las clasifica y explica por qué hacen falta las dos.</td></tr><tr><th>Resolución de los casos</th><td>Las respuestas no resuelven la situación.</td><td>Resuelve el caso pero sin justificar.</td><td>Resuelve y justifica cada caso.</td><td>Resuelve, justifica y añade qué habría evitado el problema de antemano.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e2"> Marcar como entregado</label>
+</article>
+<section class="resumen"><h2>Lo esencial de esta unidad</h2><ul><li>Hay ordenadores donde no lo parece: de propósito general, móviles, servidores y sistemas empotrados.</li><li>El microcontrolador es un ordenador en un chip, con un solo programa, y por eso es fiable y gasta poco.</li><li>Periféricos de entrada y de salida; el procesador en medio.</li><li>Software de base (el sistema operativo) y de aplicación (lo que tú usas).</li><li>El SAI evita perder el trabajo en un apagón y estabiliza la corriente.</li><li>Seguridad activa (evitar el problema) y pasiva (reducir el daño): hacen falta las dos.</li></ul></section>
+<nav class="nav-ud"><a href="2eso-ud01.html"><small>← Unidad anterior</small>UD1. Programar con bloques</a><a href="2eso-ud03.html" style="text-align:right"><small>Unidad siguiente →</small>UD3. Robots</a></nav>
+</main>
+<footer>
+  <div class="pie-int">
+    <span>Computación y Robótica · 2.º ESO · Coria del Río (Sevilla)</span>
+    <span><a href="index.html">Inicio</a> · <a href="glosario.html">Glosario</a></span>
+  </div>
+  <div class="pie-lic">
+<p><strong>Computación y Robótica · 2.º ESO</strong>, de Emilio Rubio, está bajo licencia
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">CC BY-NC-SA 4.0</a>. Puedes copiarlo, distribuirlo y adaptarlo
+<strong>sin fines comerciales</strong>, siempre que cites la autoría y compartas el resultado con
+esta misma licencia.</p>
+<p class="lic-nota">Quedan fuera de esta licencia los textos literales del currículo oficial, que
+proceden de la normativa de la Junta de Andalucía, y cualquier material de terceros que aparezca
+citado con su propia licencia.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

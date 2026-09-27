@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD4. Internet de las cosas · 2.º ESO</title>
+<meta name="description" content="Objetos que miden, hablan entre ellos y avisan">
+<meta name="author" content="Emilio Rubio">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='19'>&#9881;</text></svg>">
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a class="marca" href="index.html">
+      <span class="sello">CYR·2</span>
+      <span>Computación y Robótica<small>2.º ESO · Coria del Río (Sevilla)</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">2.º ESO</a><a href="2eso-curriculo.html">Currículo</a><a href="2eso-rubricas.html">Rúbricas</a><a href="2eso-presentacion.html">Presentación</a><a href="2eso-diagnostico.html">¿Qué sé ya?</a><a href="glosario.html">Glosario</a>
+      <button type="button" data-tema-bt aria-pressed="false" title="Cambiar entre modo claro y oscuro">Tema</button>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="cabecera-ud">
+<p class="eyebrow">2.º ESO · Unidad 4 · 1.ª vuelta</p>
+<h1>Internet de las cosas</h1>
+<p class="subtitulo">Objetos que miden, hablan entre ellos y avisan</p>
+<p>Ya sabes que dentro de muchos objetos hay un ordenador diminuto. Ahora dale a ese
+ordenador un sensor y una conexión, y tendrás algo distinto: un objeto que <strong>sabe</strong> algo
+del mundo y puede <strong>contarlo</strong>.</p>
+<p>Eso es el internet de las cosas, y está en más sitios de los que imaginas: en el contador de la luz
+de tu casa, en las parcelas de arroz de la marisma y en la pulsera que cuenta pasos.</p>
+<p>En esta unidad se juntan casi todas las piezas del curso: sensores, microcontroladores, programación
+y conexión. Es la unidad donde construyes tu primer sistema completo.</p>
+<div class="ficha">
+  <span class="dato"><b>5</b> sesiones</span>
+  <span class="dato"><b>5</b> apartados de teoría</span>
+  <span class="dato"><b>4</b> ejercicios evaluables</span>
+</div>
+<div class="ficha" style="margin-top:.6rem"><span class="dato">Criterios</span><a class="chip" href="2eso-curriculo.html#c1-1" title="Comprender el funcionamiento de los sistemas de computación física, sus componentes y principales características.">1.1</a> <a class="chip" href="2eso-curriculo.html#c3-1" title="Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible.">3.1</a> <a class="chip" href="2eso-curriculo.html#c1-4" title="Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características.">1.4</a> <a class="chip" href="2eso-curriculo.html#c1-3" title="Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.">1.3</a></div>
+<div class="ficha" style="margin-top:.4rem"><span class="dato">Saberes</span><a class="chip s" href="2eso-curriculo.html#sB-1" title="Clasificación de los sensores IoT.">B.1</a> <a class="chip s" href="2eso-curriculo.html#sB-2" title="Conexión dispositivo a dispositivos.">B.2</a> <a class="chip s" href="2eso-curriculo.html#sB-3" title="Conexión BLE (Bluetooth Low Energy).">B.3</a> <a class="chip s" href="2eso-curriculo.html#sB-4" title="Aplicaciones de IoT industrial.">B.4</a> <a class="chip s" href="2eso-curriculo.html#sC-1" title="Clasificación de robots: industriales y de servicios.">C.1</a> <a class="chip s" href="2eso-curriculo.html#sA-4" title="Generación de tareas repetitivas y condicionales.">A.4</a> <a class="chip s" href="2eso-curriculo.html#sF-3" title="Hardware: periféricos de entrada y salida. Software: de base y de aplicación.">F.3</a></div>
+<p class="reto">¿Qué cambia cuando un objeto corriente puede medir algo y contárselo a otro?</p>
+</div>
+<section class="mapa">
+  <h2>Mapa de la unidad</h2>
+  <p class="pista">Línea continua: teoría. Línea discontinua y borde de trazos: ejercicio evaluable y
+  la teoría de la que depende. Toca cualquier nodo para ir a su contenido.</p>
+  <div class="mapa-lienzo"><svg viewBox="0 0 900 450" role="img" aria-label="Mapa conceptual de la unidad 4"><path class="enlace" data-enlace-de="t1" d="M 248 225.0 C 290 225.0 290 65.0 330 65.0"/><path class="enlace" data-enlace-de="t2" d="M 248 225.0 C 290 225.0 290 145.0 330 145.0"/><path class="enlace" data-enlace-de="t3" d="M 248 225.0 C 290 225.0 290 225.0 330 225.0"/><path class="enlace" data-enlace-de="t4" d="M 248 225.0 C 290 225.0 290 305.0 330 305.0"/><path class="enlace" data-enlace-de="t5" d="M 248 225.0 C 290 225.0 290 385.0 330 385.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 65.0 C 600 65.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 145.0 C 600 145.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 225.0 C 600 225.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 145.0 C 600 145.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 305.0 C 600 305.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 385.0 C 600 385.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e3" d="M 556 65.0 C 600 65.0 600 271.0 642 271.0"/><path class="enlace dep" data-enlace-de="e3" d="M 556 305.0 C 600 305.0 600 271.0 642 271.0"/><path class="enlace dep" data-enlace-de="e4" d="M 556 385.0 C 600 385.0 600 363.0 642 363.0"/><g class="nodo centro"><rect class="caja" x="16" y="189.0" width="232" height="72" rx="5"/><text x="132" y="219.0" text-anchor="middle">UD4</text><text x="132" y="239.0" text-anchor="middle" font-size="11.5" font-weight="500">Internet de las cosas</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t1"><rect class="caja" x="330" y="36.0" width="226" height="58" rx="4"/><text x="443" y="55.5" text-anchor="middle">Qué es el internet de</text><text x="443" y="70.5" text-anchor="middle">las cosas</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t2"><rect class="caja" x="330" y="116.0" width="226" height="58" rx="4"/><text x="443" y="135.5" text-anchor="middle">Los sensores: qué se</text><text x="443" y="150.5" text-anchor="middle">puede medir</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t3"><rect class="caja" x="330" y="196.0" width="226" height="58" rx="4"/><text x="443" y="215.5" text-anchor="middle">Cómo se hablan los</text><text x="443" y="230.5" text-anchor="middle">dispositivos</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t4"><rect class="caja" x="330" y="276.0" width="226" height="58" rx="4"/><text x="443" y="303.0" text-anchor="middle">IoT industrial</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t5"><rect class="caja" x="330" y="356.0" width="226" height="58" rx="4"/><text x="443" y="375.5" text-anchor="middle">Programar el sistema</text><text x="443" y="390.5" text-anchor="middle">conectado</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e1"><rect class="caja" x="642" y="54.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="70.0" text-anchor="middle">CRITERIO 1.1</text><text x="762" y="82.5" text-anchor="middle">Informe: anatomía de un</text><text x="762" y="97.5" text-anchor="middle">sistema conectado</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e2"><rect class="caja" x="642" y="146.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="162.0" text-anchor="middle">CRITERIO 3.1</text><text x="762" y="174.5" text-anchor="middle">Construye tu sistema</text><text x="762" y="189.5" text-anchor="middle">conectado</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e3"><rect class="caja" x="642" y="238.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="254.0" text-anchor="middle">CRITERIO 1.4</text><text x="762" y="266.5" text-anchor="middle">Portfolio: del robot al</text><text x="762" y="281.5" text-anchor="middle">objeto conectado</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e4"><rect class="caja" x="642" y="330.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="346.0" text-anchor="middle">CRITERIO 1.3</text><text x="762" y="358.5" text-anchor="middle">Cuestionario: leer el</text><text x="762" y="373.5" text-anchor="middle">programa de un sistema</text></g></svg></div>
+  <ul class="mapa-lista"><li><a href="#t1" data-destino="t1"><span class="cod">TEORÍA</span>Qué es el internet de las cosas</a></li><li><a href="#t2" data-destino="t2"><span class="cod">TEORÍA</span>Los sensores: qué se puede medir</a></li><li><a href="#t3" data-destino="t3"><span class="cod">TEORÍA</span>Cómo se hablan los dispositivos</a></li><li><a href="#t4" data-destino="t4"><span class="cod">TEORÍA</span>IoT industrial</a></li><li><a href="#t5" data-destino="t5"><span class="cod">TEORÍA</span>Programar el sistema conectado</a></li><li class="tarea"><a href="#e1" data-destino="e1"><span class="cod">EJERCICIO · CRITERIO 1.1</span>Informe: anatomía de un sistema conectado</a></li><li class="tarea"><a href="#e2" data-destino="e2"><span class="cod">EJERCICIO · CRITERIO 3.1</span>Construye tu sistema conectado</a></li><li class="tarea"><a href="#e3" data-destino="e3"><span class="cod">EJERCICIO · CRITERIO 1.4</span>Portfolio: del robot al objeto conectado</a></li><li class="tarea"><a href="#e4" data-destino="e4"><span class="cod">EJERCICIO · CRITERIO 1.3</span>Cuestionario: leer el programa de un sistema</a></li></ul>
+</section>
+<section class="progreso" data-progreso-ud="2eso4">
+<strong>Tu progreso en esta unidad</strong>
+<div class="barra-p"><div class="relleno"></div></div>
+<span data-progreso-txt style="font-size:.88rem;color:var(--tinta-2)"></span>
+<p class="aviso">Las marcas se guardan solo en este navegador y en este dispositivo: no las ve el
+profesorado y no sustituyen a la entrega real. Si usas un ordenador compartido del aula, es normal que
+no aparezcan. <button type="button" class="bt" data-reset>Desmarcar todo</button></p>
+</section>
+<div class="bloque-titulo"><h2>Teoría</h2><span class="et">5 apartados</span><button type="button" class="bt" data-abrir-todo data-abierto="0" style="margin-left:auto">Desplegar todo</button></div>
+<details class="seccion" id="t1" open><summary><span class="num">1</span>Qué es el internet de las cosas<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>El <a class="termino" href="glosario.html#iot" title="Internet de las cosas: Conjunto de objetos cotidianos con sensores y conexión a la red, capaces de enviar datos y recibir órdenes a distancia.">internet de las cosas</a> es la idea de conectar a la red objetos que antes no estaban
+conectados. No ordenadores ni móviles: bombillas, contadores, cerraduras, macetas, compuertas de
+riego.</p>
+<p>La lógica es siempre la misma y tiene cuatro pasos: un sensor <strong>mide</strong>, un
+microcontrolador <strong>procesa</strong> ese dato, una red lo <strong>transporta</strong>, y en algún
+sitio se <strong>guarda y se muestra</strong> para que alguien decida o para que el propio sistema
+actúe.</p>
+<p>Lo interesante no es que un objeto esté conectado, sino lo que permite: enterarte de algo
+<strong>sin estar delante</strong>, y enterarte de muchas cosas a la vez que por separado no dirían
+nada.</p><figure class="esquema"><div class="esquema-lienzo"><svg viewBox="0 0 800 310" role="img" aria-label="Todo sistema automático se reduce a este esquema, desde un termostato hasta un robot." xmlns="http://www.w3.org/2000/svg">
+<g class="svg-caja">
+<rect x="40" y="90" width="150" height="80" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2.5"/>
+<rect x="315" y="90" width="170" height="80" rx="4" fill="var(--papel-2)" stroke="var(--tinta)" stroke-width="2.5"/>
+<rect x="596" y="90" width="178" height="80" rx="4" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2.5"/>
+</g>
+<text x="115" y="124" text-anchor="middle" class="svg-lbl-b">SENSOR</text>
+<text x="115" y="146" text-anchor="middle" class="svg-lbl">mide el entorno</text>
+<text x="400" y="118" text-anchor="middle" class="svg-lbl-b">CONTROLADOR</text>
+<text x="400" y="140" text-anchor="middle" class="svg-lbl">decide según</text>
+<text x="400" y="157" text-anchor="middle" class="svg-lbl">el programa</text>
+<text x="685" y="124" text-anchor="middle" class="svg-lbl-b">ACTUADOR</text>
+<text x="685" y="146" text-anchor="middle" class="svg-lbl">actúa sobre el entorno</text>
+<g stroke="var(--linea)" stroke-width="2.5" marker-end="url(#sc)">
+<line x1="192" y1="130" x2="308" y2="130"/><line x1="487" y1="130" x2="589" y2="130"/>
+</g>
+<text x="250" y="118" text-anchor="middle" class="svg-lbl">señal</text>
+<text x="538" y="118" text-anchor="middle" class="svg-lbl">orden</text>
+<path d="M 685 175 v 55 H 115 v -52" fill="none" stroke="var(--verde)" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#sc2)"/>
+<text x="400" y="252" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">REALIMENTACIÓN: el sensor vuelve a medir el efecto de la acción</text>
+<text x="400" y="278" text-anchor="middle" class="svg-lbl">Con este camino de vuelta, el sistema es de lazo cerrado y se corrige solo.</text>
+<text x="400" y="298" text-anchor="middle" class="svg-lbl">Sin él, sería de lazo abierto: actuaría a ciegas.</text>
+<text x="400" y="48" text-anchor="middle" class="svg-lbl-b">Ejemplo: aire acondicionado del aula</text>
+<text x="400" y="68" text-anchor="middle" class="svg-lbl">termómetro → placa de control → compresor</text>
+<defs>
+<marker id="sc" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--linea)"/></marker>
+<marker id="sc2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--verde)"/></marker>
+</defs>
+</svg></div><figcaption>Todo sistema automático se reduce a este esquema, desde un termostato hasta un robot.</figcaption></figure><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>El contador de la luz de tu casa ya no lo lee nadie puerta a puerta: envía la
+lectura solo. Eso ahorra desplazamientos, pero también significa que la compañía sabe a qué horas hay
+alguien en casa. Todo objeto conectado da una comodidad y cede un dato.</p></div></div></details>
+<details class="seccion" id="t2"><summary><span class="num">2</span>Los sensores: qué se puede medir<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un <a class="termino" href="glosario.html#sensor" title="Sensor: Componente que capta una magnitud del entorno (luz, temperatura, distancia, humedad) y la convierte en una señal eléctrica.">sensor</a> convierte una magnitud del mundo en una señal eléctrica que el
+programa puede leer. Los hay de muchos tipos y conviene conocer las familias:</p>
+<ul>
+<li><strong>Ambientales:</strong> temperatura, humedad del aire, humedad del suelo, luz, calidad del
+aire, lluvia.</li>
+<li><strong>De posición y movimiento:</strong> distancia, inclinación, aceleración, presencia.</li>
+<li><strong>De estado:</strong> contacto abierto o cerrado, nivel de un líquido, peso.</li>
+<li><strong>De identificación:</strong> lectores que reconocen una tarjeta o una etiqueta.</li>
+</ul>
+<h4>Ningún sensor es perfecto</h4>
+<p>Todos tienen un <strong>rango</strong> (entre qué valores funcionan), una
+<strong>precisión</strong> (cuánto se acercan al valor real) y un <strong>ritmo</strong> (cada cuánto
+pueden medir). Elegir un sensor es elegir cuál de esas tres cosas te importa más, porque no vas a tener
+las tres al máximo por poco dinero.</p>
+<p>Y todos se equivocan de vez en cuando. Por eso un sistema serio nunca actúa con una sola lectura:
+mide varias veces y trabaja con la media.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 1 · no evaluable</span><p>Elige tres problemas reales (una planta que se seca, una puerta
+que alguien deja abierta, una habitación demasiado húmeda) y di qué sensor usarías en cada caso, qué
+rango necesitas y cada cuánto tendría que medir.</p></div></div></details>
+<details class="seccion" id="t3"><summary><span class="num">3</span>Cómo se hablan los dispositivos<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>De poco sirve medir si el dato se queda dentro. La conexión entre dispositivos se
+elige según tres cosas: <strong>cuánto alcance</strong> hace falta, <strong>cuántos datos</strong> hay
+que mandar y <strong>cuánta batería</strong> se puede gastar.</p>
+<ul>
+<li><strong>Cable:</strong> el más fiable y el que menos gasta, pero ata el aparato a un sitio.</li>
+<li><strong>Wifi:</strong> mucha velocidad y alcance de una casa, pero consume bastante. Bien si hay
+enchufe cerca.</li>
+<li><strong><a class="termino" href="glosario.html#ble" title="Bluetooth de baja energía: Variante del Bluetooth pensada para enviar pocos datos gastando muy poca batería. Es la que usan pulseras, balizas y muchos sensores.">bluetooth de baja energía</a>:</strong> pensado justo para esto. Manda pocos datos y gasta tan poco que un
+sensor puede vivir meses con una pila de botón. Es lo que usan las pulseras de actividad y la mayoría
+de sensores domésticos.</li>
+<li><strong>Redes de largo alcance:</strong> llegan a kilómetros, muy poco consumo, pero envían muy
+pocos datos y despacio. Se usan en campo abierto.</li>
+</ul>
+<p>Los dispositivos pueden hablar <strong>entre ellos</strong> directamente (el sensor le dice al
+riego que abra) o <strong>a través de un intermediario</strong> que recoge todo y lo reenvía. Lo
+segundo es más flexible; lo primero sigue funcionando aunque se caiga internet.</p><div class="caja caja-coria"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--verde-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 l6 -3 l6 3 l6 -3 v15 l-6 3 l-6 -3 l-6 3 z M9 3 v15 M15 6 v15"/></svg> Aquí, en Coria del Río</span><p>En las parcelas de arroz de Isla Mayor y La Puebla del Río, la cobertura móvil es
+irregular en cuanto te alejas de los pueblos: hay pocas antenas porque hay poca gente. Por eso los
+sistemas de control de riego no pueden depender del móvil y usan a menudo enlaces de radio propios,
+con el controlador de campo capaz de funcionar solo durante horas y sincronizar después.</p>
+<p>Es un buen recordatorio de que <strong>la tecnología que eliges depende del territorio</strong>, no
+solo de lo que sea mejor sobre el papel.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 2 · no evaluable</span><p>Para cada caso, elige la conexión más adecuada y justifícalo:
+un sensor de humedad en una maceta del aula, una cámara de vigilancia, un sensor de nivel de agua en
+mitad de la marisma, y una pulsera que cuenta pasos.</p></div></div></details>
+<details class="seccion" id="t4"><summary><span class="num">4</span>IoT industrial<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Cuando el internet de las cosas entra en una fábrica, en el campo o en una red
+eléctrica, se le llama IoT industrial, y el objetivo cambia: ya no es comodidad, es
+<strong>anticiparse</strong>.</p>
+<p>La aplicación más potente se llama mantenimiento predictivo. En lugar de arreglar una máquina cuando
+se rompe, o de revisarla cada seis meses por si acaso, se le ponen sensores de vibración y temperatura
+y se aprende cómo suena cuando está sana. Cuando empieza a sonar distinto, se avisa antes de que
+falle.</p>
+<p>Otras aplicaciones habituales: seguimiento de mercancías, control de consumo energético, riego según
+la humedad real del suelo en vez de según el calendario, y vigilancia de infraestructuras a las que
+llegar cuesta caro.</p>
+<p>El patrón de fondo siempre es el mismo: <strong>sustituir una suposición por una medida</strong>.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 3 · no evaluable</span><p>Piensa en algo del instituto que ahora se hace «por si acaso» o
+según un calendario fijo. Describe cómo lo convertirías en algo basado en medidas: qué medirías, cada
+cuánto y qué harías con el dato.</p></div></div></details>
+<details class="seccion" id="t5"><summary><span class="num">5</span>Programar el sistema conectado<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>El programa de un dispositivo IoT es sencillo y casi siempre tiene la misma forma:
+un <a class="termino" href="glosario.html#bucle" title="Bucle: Instrucción que repite un bloque de código un número de veces o mientras se cumpla una condición.">bucle</a> que repite para siempre y dentro, un <a class="termino" href="glosario.html#condicional" title="Condicional: Instrucción que hace que el programa elija entre dos caminos según se cumpla o no una condición.">condicional</a> que compara la medida con un
+umbral.</p>
+<p><em>Repetir para siempre: leer el sensor; si el valor pasa del umbral, actuar y avisar; esperar un
+rato; volver a empezar.</em></p>
+<p>Hay dos decisiones que parecen menores y no lo son. La primera es <strong>cada cuánto medir</strong>:
+demasiado a menudo gasta batería y llena de datos inútiles; demasiado poco y te enteras tarde. La
+segunda es <strong>qué hacer si se cae la conexión</strong>.</p>
+<p>Esa segunda es la regla de oro del IoT: <strong>si se va la red, el sistema tiene que quedarse en un
+estado seguro</strong>. Un riego que deja la válvula abierta al perder la conexión es un mal diseño, por
+bien que funcione el resto del tiempo.</p><div class="caja caja-seg"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--rojo)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 l8 3 v6 c0 5 -4 8 -8 9 c-4 -1 -8 -4 -8 -9 V6 z"/></svg> Atención</span><p>Un dispositivo conectado es una puerta a tu red. Tres reglas mínimas: cambiar
+siempre la contraseña que trae de fábrica, no dejarlo accesible desde internet si no hace falta, y
+mantenerlo actualizado. La mayoría de los ataques a aparatos domésticos aprovechan contraseñas de
+fábrica que nadie cambió.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 4 · no evaluable</span><p>Escribe en pseudocódigo el programa de un sistema que encienda
+una luz cuando anochezca y la apague al amanecer. Añade qué pasaría si el sensor de luz se estropeara y
+diera siempre el mismo valor.</p></div></div></details>
+<div class="bloque-titulo"><h2>Ejercicios evaluables</h2><span class="et">cada uno con su criterio y su rúbrica</span></div>
+<article class="ejercicio" id="e1">
+<h3>Informe: anatomía de un sistema conectado <a class="chip" href="2eso-curriculo.html#c1-1" title="Comprender el funcionamiento de los sistemas de computación física, sus componentes y principales características.">Criterio 1.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Comprender el funcionamiento de los sistemas de computación física, sus componentes y principales características.</p>
+<p>Elige un sistema de computación física conectado que exista de verdad (una
+estación meteorológica, un contador inteligente, una pulsera de actividad, un sistema de riego
+automático, un patinete compartido) y analízalo por escrito.</p>
+<ol>
+<li>Qué mide, con qué tipo de sensores y con qué precisión aproximada.</li>
+<li>Qué procesa el dispositivo por su cuenta y qué envía fuera.</li>
+<li>Qué tecnología de conexión usa y <strong>por qué esa y no otra</strong>.</li>
+<li>Con quién habla: ¿con otro dispositivo, con un servidor, con las dos cosas?</li>
+<li>Qué pasaría si se quedara sin conexión.</li>
+</ol>
+<p class="entrega"><strong>Entrega:</strong> Informe con un esquema del sistema. Individual.<br><strong>Instrumento:</strong> Informe de análisis</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Identificación de los componentes</th><td>No distingue las partes del sistema.</td><td>Identifica algunos componentes.</td><td>Identifica sensores, procesamiento y comunicación.</td><td>Los identifica y explica cómo encajan entre sí.</td></tr><tr><th>Comprensión de la conexión</th><td>Confunde las tecnologías o no las menciona.</td><td>Nombra la tecnología sin justificarla.</td><td>Explica qué tecnología usa y por qué es la adecuada.</td><td>La justifica comparando alcance, consumo y cantidad de datos.</td></tr><tr><th>Esquema del sistema</th><td>No hay esquema o no se entiende.</td><td>Esquema incompleto.</td><td>Esquema claro con las cuatro etapas del sistema.</td><td>Esquema claro que se entiende sin leer el texto.</td></tr><tr><th>Análisis crítico</th><td>No plantea qué pasaría si algo fallara.</td><td>Lo menciona de pasada.</td><td>Analiza el comportamiento ante una pérdida de conexión.</td><td>Lo analiza y señala además qué datos personales cede el sistema.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e1"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e2">
+<h3>Construye tu sistema conectado <a class="chip" href="2eso-curriculo.html#c3-1" title="Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible.">Criterio 3.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible.</p>
+<p>Por parejas. Construid y programad un sistema que mida algo del mundo real y
+reaccione. Puede ser físico, con placa y sensores, o simulado si no hay material disponible.</p>
+<p>Requisitos:</p>
+<ol>
+<li>Al menos <strong>un sensor</strong> y <strong>un actuador</strong>.</li>
+<li>Un programa con bucle y condición que decida a partir de la medida.</li>
+<li>Un umbral justificado: por qué ese valor y no otro.</li>
+<li>Un comportamiento seguro previsto si el sensor falla o se pierde la conexión.</li>
+<li>Tabla de pruebas con al menos cinco situaciones distintas y lo que ocurrió en cada una.</li>
+</ol>
+<p>Ideas que funcionan bien: aviso de maceta seca, luz que se enciende al anochecer, alarma de puerta
+abierta, control de temperatura del aula.</p>
+<p class="entrega"><strong>Entrega:</strong> Montaje o simulación + programa + tabla de pruebas. Por parejas.<br><strong>Instrumento:</strong> Proyecto o producto final</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Funcionamiento del sistema</th><td>No llega a funcionar.</td><td>Funciona de forma intermitente.</td><td>Funciona de forma estable y responde a los cambios reales.</td><td>Funciona, es estable y filtra las lecturas para no reaccionar a un dato suelto.</td></tr><tr><th>Programación</th><td>El programa no controla el sistema.</td><td>Controla solo en el caso ideal.</td><td>Bucle y condición bien usados, con el umbral justificado.</td><td>Bien construido, comentado y fácil de modificar.</td></tr><tr><th>Comportamiento ante fallos</th><td>No lo contempla.</td><td>Lo menciona sin implementarlo.</td><td>El sistema queda en estado seguro si algo falla.</td><td>Estado seguro, aviso del fallo y explicación de por qué se eligió ese estado.</td></tr><tr><th>Pruebas y documentación</th><td>Sin tabla de pruebas.</td><td>Pruebas escasas o poco significativas.</td><td>Tabla completa con situaciones variadas.</td><td>Tabla completa, con casos límite y una conclusión sobre el sistema.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e2"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e3">
+<h3>Portfolio: del robot al objeto conectado <a class="chip" href="2eso-curriculo.html#c1-4" title="Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características.">Criterio 1.4</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características.</p>
+<p>Revisa lo que guardaste en el portfolio durante la UD3 y amplíalo con lo que has
+aprendido aquí. Entrega una entrada de portfolio que responda a estas preguntas:</p>
+<ol>
+<li>¿Qué tienen en común el robot de la UD3 y el sistema conectado de esta unidad? Señala las partes
+equivalentes.</li>
+<li>¿En qué se diferencian? Piensa en autonomía, en movimiento y en para qué sirve cada uno.</li>
+<li>Un objeto conectado, ¿es un robot? Defiende tu respuesta con la regla de percibir–decidir–actuar.</li>
+<li>¿Qué has entendido de la robótica ahora que no entendías en la UD3?</li>
+</ol>
+<p>Se valora la reflexión, no la extensión. Media página bien pensada vale más que dos de relleno.</p>
+<p class="entrega"><strong>Entrega:</strong> Entrada de portfolio con las fichas de UD3 y UD4 enlazadas. Individual.<br><strong>Instrumento:</strong> Portfolio o diario de aprendizaje</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Comparación entre sistemas</th><td>No establece relación entre ambos.</td><td>Señala parecidos evidentes.</td><td>Compara correctamente componentes y funciones.</td><td>Compara y encuentra equivalencias que no se habían explicado en clase.</td></tr><tr><th>Comprensión de los componentes</th><td>Confunde las partes de uno y otro.</td><td>Identifica las partes principales.</td><td>Identifica y relaciona sensores, control y actuadores en ambos.</td><td>Lo hace y explica por qué cada sistema necesita los suyos.</td></tr><tr><th>Argumentación</th><td>Responde sí o no sin argumentar.</td><td>Argumenta débilmente.</td><td>Defiende su postura con el criterio visto en clase.</td><td>La defiende y reconoce los casos en que su respuesta sería discutible.</td></tr><tr><th>Reflexión sobre el aprendizaje</th><td>No reflexiona sobre lo aprendido.</td><td>Reflexión genérica.</td><td>Identifica con concreción qué ha entendido mejor.</td><td>Lo identifica y explica qué le hizo entenderlo.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e3"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e4">
+<h3>Cuestionario: leer el programa de un sistema <a class="chip" href="2eso-curriculo.html#c1-3" title="Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.">Criterio 1.3</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.</p>
+<p>Cuestionario individual con programas de sistemas conectados delante. Para cada
+uno se te preguntará:</p>
+<ul>
+<li>Qué hace el programa, paso a paso.</li>
+<li>Qué ocurre si el sensor devuelve un valor imposible.</li>
+<li>Dónde está el bucle y dónde la condición, y qué pasaría si se quitara cada uno.</li>
+<li>Qué habría que cambiar para que midiera cada minuto en vez de cada diez.</li>
+</ul>
+<p>Es un cuestionario de <strong>lectura</strong>: no hay que escribir programas nuevos, hay que
+demostrar que entiendes los que te dan.</p>
+<p class="entrega"><strong>Entrega:</strong> Cuestionario resuelto en el aula. Individual.<br><strong>Instrumento:</strong> Cuestionario</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Lectura del programa</th><td>No consigue seguir la ejecución.</td><td>Sigue el caso normal pero no los demás.</td><td>Explica correctamente lo que hace el programa.</td><td>Lo explica y anticipa su comportamiento en situaciones no previstas.</td></tr><tr><th>Identificación de las estructuras</th><td>No localiza bucles ni condiciones.</td><td>Las localiza sin explicar su papel.</td><td>Las localiza y explica para qué sirven ahí.</td><td>Explica además qué se rompería exactamente al quitarlas.</td></tr><tr><th>Modificación razonada</th><td>No sabe qué habría que cambiar.</td><td>Propone un cambio incompleto.</td><td>Propone el cambio correcto.</td><td>Lo propone y valora qué efecto tendría en el consumo del dispositivo.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e4"> Marcar como entregado</label>
+</article>
+<section class="resumen"><h2>Lo esencial de esta unidad</h2><ul><li>El IoT conecta objetos corrientes: medir, procesar, transportar y mostrar.</li><li>Familias de sensores, y sus tres límites: rango, precisión y ritmo de medida.</li><li>Cable, wifi, BLE y redes de largo alcance: se elige según alcance, datos y consumo.</li><li>IoT industrial y mantenimiento predictivo: sustituir una suposición por una medida.</li><li>El programa típico es un bucle con una condición sobre un umbral.</li><li>Regla de oro: si se cae la red, el sistema debe quedarse en un estado seguro.</li></ul></section>
+<nav class="nav-ud"><a href="2eso-ud03.html"><small>← Unidad anterior</small>UD3. Robots</a><a href="2eso-ud05.html" style="text-align:right"><small>Unidad siguiente →</small>UD5. Aplicaciones móviles</a></nav>
+</main>
+<footer>
+  <div class="pie-int">
+    <span>Computación y Robótica · 2.º ESO · Coria del Río (Sevilla)</span>
+    <span><a href="index.html">Inicio</a> · <a href="glosario.html">Glosario</a></span>
+  </div>
+  <div class="pie-lic">
+<p><strong>Computación y Robótica · 2.º ESO</strong>, de Emilio Rubio, está bajo licencia
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">CC BY-NC-SA 4.0</a>. Puedes copiarlo, distribuirlo y adaptarlo
+<strong>sin fines comerciales</strong>, siempre que cites la autoría y compartas el resultado con
+esta misma licencia.</p>
+<p class="lic-nota">Quedan fuera de esta licencia los textos literales del currículo oficial, que
+proceden de la normativa de la Junta de Andalucía, y cualquier material de terceros que aparezca
+citado con su propia licencia.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

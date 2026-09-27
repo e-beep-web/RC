@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD3. Robots · 2.º ESO</title>
+<meta name="description" content="Qué son, de qué están hechos y para qué se usan de verdad">
+<meta name="author" content="Emilio Rubio">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='19'>&#9881;</text></svg>">
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a class="marca" href="index.html">
+      <span class="sello">CYR·2</span>
+      <span>Computación y Robótica<small>2.º ESO · Coria del Río (Sevilla)</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">2.º ESO</a><a href="2eso-curriculo.html">Currículo</a><a href="2eso-rubricas.html">Rúbricas</a><a href="2eso-presentacion.html">Presentación</a><a href="2eso-diagnostico.html">¿Qué sé ya?</a><a href="glosario.html">Glosario</a>
+      <button type="button" data-tema-bt aria-pressed="false" title="Cambiar entre modo claro y oscuro">Tema</button>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="cabecera-ud">
+<p class="eyebrow">2.º ESO · Unidad 3 · 1.ª vuelta</p>
+<h1>Robots</h1>
+<p class="subtitulo">Qué son, de qué están hechos y para qué se usan de verdad</p>
+<p>La palabra robot se usa para casi cualquier cosa, y casi siempre mal. Un brazo que
+suelda coches es un robot; un aspirador que esquiva los muebles también; una lavadora, aunque tenga
+programas, no.</p>
+<p>En esta unidad vas a aprender dónde está la diferencia, de qué piezas se compone un robot y qué
+hacen realmente en el mundo. Y al final programarás uno: con lo que aprendiste en la UD1, porque las
+estructuras son exactamente las mismas.</p>
+<div class="ficha">
+  <span class="dato"><b>7</b> sesiones</span>
+  <span class="dato"><b>6</b> apartados de teoría</span>
+  <span class="dato"><b>3</b> ejercicios evaluables</span>
+</div>
+<div class="ficha" style="margin-top:.6rem"><span class="dato">Criterios</span><a class="chip" href="2eso-curriculo.html#c1-2" title="Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes.">1.2</a> <a class="chip" href="2eso-curriculo.html#c1-4" title="Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características.">1.4</a> <a class="chip" href="2eso-curriculo.html#c2-1" title="Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.">2.1</a></div>
+<div class="ficha" style="margin-top:.4rem"><span class="dato">Saberes</span><a class="chip s" href="2eso-curriculo.html#sC-1" title="Clasificación de robots: industriales y de servicios.">C.1</a> <a class="chip s" href="2eso-curriculo.html#sC-2" title="Aplicaciones de los robots.">C.2</a> <a class="chip s" href="2eso-curriculo.html#sC-3" title="Componentes: Sensores, efectores y actuadores.">C.3</a> <a class="chip s" href="2eso-curriculo.html#sC-4" title="Robots móviles: aplicaciones.">C.4</a> <a class="chip s" href="2eso-curriculo.html#sC-5" title="Programación con lenguajes de bloques.">C.5</a> <a class="chip s" href="2eso-curriculo.html#sA-3" title="Secuencia de instrucciones. Medios de expresión de algoritmos.">A.3</a> <a class="chip s" href="2eso-curriculo.html#sA-4" title="Generación de tareas repetitivas y condicionales.">A.4</a></div>
+<p class="reto">¿Qué tiene que tener una máquina para que la llamemos robot y no simplemente aparato?</p>
+</div>
+<section class="mapa">
+  <h2>Mapa de la unidad</h2>
+  <p class="pista">Línea continua: teoría. Línea discontinua y borde de trazos: ejercicio evaluable y
+  la teoría de la que depende. Toca cualquier nodo para ir a su contenido.</p>
+  <div class="mapa-lienzo"><svg viewBox="0 0 900 530" role="img" aria-label="Mapa conceptual de la unidad 3"><path class="enlace" data-enlace-de="t1" d="M 248 265.0 C 290 265.0 290 65.0 330 65.0"/><path class="enlace" data-enlace-de="t2" d="M 248 265.0 C 290 265.0 290 145.0 330 145.0"/><path class="enlace" data-enlace-de="t3" d="M 248 265.0 C 290 265.0 290 225.0 330 225.0"/><path class="enlace" data-enlace-de="t4" d="M 248 265.0 C 290 265.0 290 305.0 330 305.0"/><path class="enlace" data-enlace-de="t5" d="M 248 265.0 C 290 265.0 290 385.0 330 385.0"/><path class="enlace" data-enlace-de="t6" d="M 248 265.0 C 290 265.0 290 465.0 330 465.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 145.0 C 600 145.0 600 173.0 642 173.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 225.0 C 600 225.0 600 173.0 642 173.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 305.0 C 600 305.0 600 265.0 642 265.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 385.0 C 600 385.0 600 265.0 642 265.0"/><path class="enlace dep" data-enlace-de="e3" d="M 556 465.0 C 600 465.0 600 357.0 642 357.0"/><g class="nodo centro"><rect class="caja" x="16" y="229.0" width="232" height="72" rx="5"/><text x="132" y="259.0" text-anchor="middle">UD3</text><text x="132" y="279.0" text-anchor="middle" font-size="11.5" font-weight="500">Robots</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t1"><rect class="caja" x="330" y="36.0" width="226" height="58" rx="4"/><text x="443" y="55.5" text-anchor="middle">Qué es un robot y qué no</text><text x="443" y="70.5" text-anchor="middle">lo es</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t2"><rect class="caja" x="330" y="116.0" width="226" height="58" rx="4"/><text x="443" y="135.5" text-anchor="middle">Industriales y de</text><text x="443" y="150.5" text-anchor="middle">servicios</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t3"><rect class="caja" x="330" y="196.0" width="226" height="58" rx="4"/><text x="443" y="215.5" text-anchor="middle">Para qué se usan de</text><text x="443" y="230.5" text-anchor="middle">verdad</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t4"><rect class="caja" x="330" y="276.0" width="226" height="58" rx="4"/><text x="443" y="295.5" text-anchor="middle">De qué está hecho un</text><text x="443" y="310.5" text-anchor="middle">robot</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t5"><rect class="caja" x="330" y="356.0" width="226" height="58" rx="4"/><text x="443" y="383.0" text-anchor="middle">Robots móviles</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t6"><rect class="caja" x="330" y="436.0" width="226" height="58" rx="4"/><text x="443" y="463.0" text-anchor="middle">Programar el robot</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e1"><rect class="caja" x="642" y="140.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="156.0" text-anchor="middle">CRITERIO 1.2</text><text x="762" y="168.5" text-anchor="middle">Exposición: un robot que</text><text x="762" y="183.5" text-anchor="middle">ya está cambiando algo</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e2"><rect class="caja" x="642" y="232.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="248.0" text-anchor="middle">CRITERIO 1.4</text><text x="762" y="260.5" text-anchor="middle">Prueba práctica: las</text><text x="762" y="275.5" text-anchor="middle">tripas del robot</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e3"><rect class="caja" x="642" y="324.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="340.0" text-anchor="middle">CRITERIO 2.1</text><text x="762" y="352.5" text-anchor="middle">Misión del robot:</text><text x="762" y="367.5" text-anchor="middle">recorrido con obstáculos</text></g></svg></div>
+  <ul class="mapa-lista"><li><a href="#t1" data-destino="t1"><span class="cod">TEORÍA</span>Qué es un robot y qué no lo es</a></li><li><a href="#t2" data-destino="t2"><span class="cod">TEORÍA</span>Industriales y de servicios</a></li><li><a href="#t3" data-destino="t3"><span class="cod">TEORÍA</span>Para qué se usan de verdad</a></li><li><a href="#t4" data-destino="t4"><span class="cod">TEORÍA</span>De qué está hecho un robot</a></li><li><a href="#t5" data-destino="t5"><span class="cod">TEORÍA</span>Robots móviles</a></li><li><a href="#t6" data-destino="t6"><span class="cod">TEORÍA</span>Programar el robot</a></li><li class="tarea"><a href="#e1" data-destino="e1"><span class="cod">EJERCICIO · CRITERIO 1.2</span>Exposición: un robot que ya está cambiando algo</a></li><li class="tarea"><a href="#e2" data-destino="e2"><span class="cod">EJERCICIO · CRITERIO 1.4</span>Prueba práctica: las tripas del robot</a></li><li class="tarea"><a href="#e3" data-destino="e3"><span class="cod">EJERCICIO · CRITERIO 2.1</span>Misión del robot: recorrido con obstáculos</a></li></ul>
+</section>
+<section class="progreso" data-progreso-ud="2eso3">
+<strong>Tu progreso en esta unidad</strong>
+<div class="barra-p"><div class="relleno"></div></div>
+<span data-progreso-txt style="font-size:.88rem;color:var(--tinta-2)"></span>
+<p class="aviso">Las marcas se guardan solo en este navegador y en este dispositivo: no las ve el
+profesorado y no sustituyen a la entrega real. Si usas un ordenador compartido del aula, es normal que
+no aparezcan. <button type="button" class="bt" data-reset>Desmarcar todo</button></p>
+</section>
+<div class="bloque-titulo"><h2>Teoría</h2><span class="et">6 apartados</span><button type="button" class="bt" data-abrir-todo data-abierto="0" style="margin-left:auto">Desplegar todo</button></div>
+<details class="seccion" id="t1" open><summary><span class="num">1</span>Qué es un robot y qué no lo es<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un <a class="termino" href="glosario.html#robot" title="Robot: Máquina capaz de percibir su entorno, decidir según un programa y actuar sobre él. Si no percibe o no decide, es un automatismo, no un robot.">robot</a> es una máquina que <strong>percibe</strong> su entorno,
+<strong>decide</strong> según un programa y <strong>actúa</strong> sobre ese entorno. Las tres cosas,
+no dos.</p>
+<p>Una lavadora tiene programas y actúa, pero no percibe casi nada: si metes tres calcetines o diez
+kilos de ropa, hace lo mismo. Un aspirador que detecta una pared, decide girar y gira, sí cumple las
+tres. Esa es la frontera.</p>
+<p>Lo que convierte a una máquina en robot no es que se mueva ni que parezca humana, sino que
+<strong>su comportamiento dependa de lo que está pasando</strong>. Por eso un brazo industrial fijo,
+que no se desplaza ni un centímetro de sitio, es más robot que muchos juguetes que caminan.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>El robot aspirador de una casa es el ejemplo perfecto: choca, retrocede, gira,
+vuelve a la base cuando se queda sin batería. Si lo pones en una habitación distinta hace cosas
+distintas, y eso es exactamente lo que se le pide a un robot.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 1 · no evaluable</span><p>De esta lista, decide cuáles son robots y cuáles no, y
+justifícalo con la regla de percibir–decidir–actuar: un dron de juguete con mando, una puerta
+automática de supermercado, un brazo de fábrica que repite siempre el mismo movimiento, un coche que
+aparca solo y una máquina de café.</p></div></div></details>
+<details class="seccion" id="t2"><summary><span class="num">2</span>Industriales y de servicios<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Los robots se clasifican en dos grandes familias, y la diferencia no es técnica sino
+de <strong>dónde trabajan</strong>.</p>
+<p>Los <strong>industriales</strong> viven dentro de una fábrica, repiten tareas con una precisión que
+ninguna persona alcanzaría y suelen estar dentro de una jaula, porque son rápidos y fuertes y no saben
+que hay alguien cerca. Sueldan, pintan, montan piezas, mueven cargas.</p>
+<p>Los <strong>de servicios</strong> trabajan fuera de la fábrica y, muchas veces, rodeados de
+personas. Ahí entra casi todo lo demás: aspiradores, robots quirúrgicos, drones de inspección, los que
+reparten en almacenes, los que exploran tuberías o el fondo del mar.</p>
+<p>Esa convivencia con personas lo cambia todo: un robot de servicios tiene que ser más lento, más
+blando y mucho más cuidadoso, aunque eso lo haga menos eficiente.</p><div class="caja caja-coria"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--verde-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 l6 -3 l6 3 l6 -3 v15 l-6 3 l-6 -3 l-6 3 z M9 3 v15 M15 6 v15"/></svg> Aquí, en Coria del Río</span><p>En los arrozales de la marisma se usa desde hace años maquinaria con guiado por
+satélite que mantiene la trayectoria sola con una precisión de centímetros, y drones que sobrevuelan
+las parcelas para ver dónde falta agua o dónde hay plaga. No tienen forma de robot de película, pero
+perciben, deciden y actúan.</p>
+<p>Y a media hora de aquí, en las plantas de Airbus en Sevilla, hay robots industriales clásicos
+trabajando en el montaje de aviones.</p></div></div></details>
+<details class="seccion" id="t3"><summary><span class="num">3</span>Para qué se usan de verdad<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>La lista de aplicaciones reales es menos espectacular y más interesante que la de
+las películas. Los robots se usan sobre todo para tareas que cumplen alguna de estas tres condiciones:
+son <strong>peligrosas</strong>, son <strong>repetitivas</strong> o exigen una
+<strong>precisión</strong> imposible para una mano humana.</p>
+<ul>
+<li><strong>Peligrosas:</strong> desactivar explosivos, inspeccionar una central tras un accidente,
+trabajar en el fondo del mar o dentro de un depósito con gases.</li>
+<li><strong>Repetitivas:</strong> montar, empaquetar, clasificar, mover cajas en un almacén.</li>
+<li><strong>De precisión:</strong> cirugía, fabricación de componentes electrónicos, laboratorios.</li>
+</ul>
+<h4>Y el debate que no conviene saltarse</h4>
+<p>Cada robot que entra en un sitio cambia el trabajo de las personas que estaban ahí. A veces para
+bien: retira a alguien de una tarea que le destrozaba la espalda o que podía matarlo. A veces para mal:
+elimina puestos que eran el sustento de familias, y quien los perdía no se convierte automáticamente en
+programador de robots.</p>
+<p>Las dos cosas son ciertas a la vez, y analizarlo en serio significa sostener las dos, no elegir la
+que más te guste.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 2 · no evaluable</span><p>Busca una aplicación real de la robótica que te llame la
+atención y responde a tres preguntas: ¿qué hacía antes una persona?, ¿por qué se decidió automatizarlo?
+y ¿quién salió ganando y quién perdiendo con el cambio?</p></div></div></details>
+<details class="seccion" id="t4"><summary><span class="num">4</span>De qué está hecho un robot<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Por dentro, todos los robots responden al mismo esquema: <a class="termino" href="glosario.html#sensor" title="Sensor: Componente que capta una magnitud del entorno (luz, temperatura, distancia, humedad) y la convierte en una señal eléctrica.">sensores</a>,
+controlador y <a class="termino" href="glosario.html#actuador" title="Actuador: Componente que actúa sobre el entorno: un motor, una bombilla, una electroválvula, un altavoz.">actuadores</a>. Es el que viste en la UD2, ahora con nombres propios.</p>
+<ul>
+<li>Los <strong>sensores</strong> son los sentidos: de distancia, de luz, de contacto, de temperatura,
+de inclinación. Convierten algo del mundo en un número que el programa puede leer.</li>
+<li>El <strong>controlador</strong> es el <a class="termino" href="glosario.html#microcontrolador" title="Microcontrolador: Ordenador diminuto dentro de un único chip, que ejecuta el programa de un robot o de un electrodoméstico.">microcontrolador</a> donde vive el programa. Lee los
+sensores, decide y manda órdenes.</li>
+<li>Los <strong>actuadores</strong> son los músculos: motores, servomotores, electroimanes. Convierten
+electricidad en movimiento.</li>
+<li>Los <strong><a class="termino" href="glosario.html#efector" title="Efector: La parte del robot que hace el trabajo final: una pinza, una ventosa, una herramienta.">efectores</a></strong> son la parte final que hace el trabajo: una pinza, una
+ventosa, un cabezal de soldadura. El actuador mueve; el efector agarra.</li>
+</ul>
+<p>A cuántos movimientos independientes puede hacer un robot se le llama <a class="termino" href="glosario.html#grados-libertad" title="Grados de libertad: Número de movimientos independientes que puede hacer un robot. Cuantos más, más posturas alcanza y más difícil es controlarlo.">grados de libertad</a>. Cuantos
+más tiene, a más sitios llega; y también más difícil resulta programarlo, porque hay más maneras de
+equivocarse.</p><figure class="esquema"><div class="esquema-lienzo"><svg viewBox="0 0 800 310" role="img" aria-label="Todo sistema automático se reduce a este esquema, desde un termostato hasta un robot." xmlns="http://www.w3.org/2000/svg">
+<g class="svg-caja">
+<rect x="40" y="90" width="150" height="80" rx="4" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2.5"/>
+<rect x="315" y="90" width="170" height="80" rx="4" fill="var(--papel-2)" stroke="var(--tinta)" stroke-width="2.5"/>
+<rect x="596" y="90" width="178" height="80" rx="4" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2.5"/>
+</g>
+<text x="115" y="124" text-anchor="middle" class="svg-lbl-b">SENSOR</text>
+<text x="115" y="146" text-anchor="middle" class="svg-lbl">mide el entorno</text>
+<text x="400" y="118" text-anchor="middle" class="svg-lbl-b">CONTROLADOR</text>
+<text x="400" y="140" text-anchor="middle" class="svg-lbl">decide según</text>
+<text x="400" y="157" text-anchor="middle" class="svg-lbl">el programa</text>
+<text x="685" y="124" text-anchor="middle" class="svg-lbl-b">ACTUADOR</text>
+<text x="685" y="146" text-anchor="middle" class="svg-lbl">actúa sobre el entorno</text>
+<g stroke="var(--linea)" stroke-width="2.5" marker-end="url(#sc)">
+<line x1="192" y1="130" x2="308" y2="130"/><line x1="487" y1="130" x2="589" y2="130"/>
+</g>
+<text x="250" y="118" text-anchor="middle" class="svg-lbl">señal</text>
+<text x="538" y="118" text-anchor="middle" class="svg-lbl">orden</text>
+<path d="M 685 175 v 55 H 115 v -52" fill="none" stroke="var(--verde)" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#sc2)"/>
+<text x="400" y="252" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">REALIMENTACIÓN: el sensor vuelve a medir el efecto de la acción</text>
+<text x="400" y="278" text-anchor="middle" class="svg-lbl">Con este camino de vuelta, el sistema es de lazo cerrado y se corrige solo.</text>
+<text x="400" y="298" text-anchor="middle" class="svg-lbl">Sin él, sería de lazo abierto: actuaría a ciegas.</text>
+<text x="400" y="48" text-anchor="middle" class="svg-lbl-b">Ejemplo: aire acondicionado del aula</text>
+<text x="400" y="68" text-anchor="middle" class="svg-lbl">termómetro → placa de control → compresor</text>
+<defs>
+<marker id="sc" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--linea)"/></marker>
+<marker id="sc2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--verde)"/></marker>
+</defs>
+</svg></div><figcaption>Todo sistema automático se reduce a este esquema, desde un termostato hasta un robot.</figcaption></figure><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 3 · no evaluable</span><p>Con el robot del aula delante (o con su simulador), identifica
+y anota cada sensor, cada actuador y el controlador. Para cada sensor, escribe qué magnitud mide y en
+qué unidades. Después tápale un sensor y predice qué hará antes de encenderlo.</p></div></div></details>
+<details class="seccion" id="t5"><summary><span class="num">5</span>Robots móviles<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Un <a class="termino" href="glosario.html#robot-movil" title="Robot móvil: Robot que se desplaza por el entorno en lugar de estar fijo en un sitio.">robot móvil</a> es el que se desplaza en lugar de estar anclado. Eso le abre
+un mundo de aplicaciones y le añade un problema enorme: <strong>tiene que saber dónde está</strong>.</p>
+<p>Un brazo industrial siempre sabe su posición, porque está atornillado al suelo y mide sus propios
+ángulos. Un robot móvil no: cada vez que las ruedas patinan un poco, su idea de dónde está se aleja un
+poco más de la realidad. Por eso llevan sensores adicionales para corregirse.</p>
+<p>Se usan en almacenes, en agricultura, en inspección de tuberías y conducciones, en exploración
+submarina y espacial, y en cualquier sitio donde la tarea está repartida por el espacio en vez de
+concentrada en un punto.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Cuando el aspirador de casa se vuelve tonto y pasa tres veces por el mismo
+sitio, no está estropeado: ha perdido la cuenta de dónde está. Ese es, literalmente, el problema
+central de la robótica móvil.</p></div></div></details>
+<details class="seccion" id="t6"><summary><span class="num">6</span>Programar el robot<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Aquí se cierra el círculo: programar un robot es exactamente lo que hiciste en la
+UD1, solo que ahora el programa no mueve un dibujo en la pantalla, sino un motor de verdad.</p>
+<p>Las estructuras son las mismas. Una secuencia de órdenes. Un <a class="termino" href="glosario.html#bucle" title="Bucle: Instrucción que repite un bloque de código un número de veces o mientras se cumpla una condición.">bucle</a> que repite. Un
+<a class="termino" href="glosario.html#condicional" title="Condicional: Instrucción que hace que el programa elija entre dos caminos según se cumpla o no una condición.">condicional</a> que consulta un sensor y decide. El esquema típico de cualquier robot es un bucle
+infinito a propósito que dentro lleva condiciones:</p>
+<p><em>Repetir para siempre: leer el sensor de distancia; si hay algo a menos de 15 cm, girar; si no,
+seguir avanzando.</em></p>
+<p>Hay dos diferencias con Scratch que conviene tener claras desde el principio. La primera es que
+<strong>el mundo real no es perfecto</strong>: un sensor puede dar una lectura rara, una rueda patina y
+las baterías se gastan. La segunda es que <strong>las cosas llevan su tiempo</strong>: si le mandas
+girar y al instante le mandas avanzar, no habrá terminado de girar.</p><figure class="esquema"><div class="esquema-lienzo"><svg viewBox="0 0 800 285" role="img" aria-label="Las tres estructuras con las que se construye cualquier programa. El encaje de las piezas te impide colocarlas en un orden imposible." xmlns="http://www.w3.org/2000/svg"><text x="130" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--verde-txt)">SECUENCIA</text>
+<text x="400" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--ambar-txt)">REPETICIÓN</text>
+<text x="670" y="30" text-anchor="middle" class="svg-lbl-b" fill="var(--ambar-txt)">CONDICIÓN</text>
+<line x1="265" y1="16" x2="265" y2="290" stroke="var(--linea)" stroke-dasharray="6 4"/>
+<line x1="535" y1="16" x2="535" y2="290" stroke="var(--linea)" stroke-dasharray="6 4"/><path d="M 48,50 h 10 l 6,6 h 14 l 6,-6 h 132 v 38 h -132 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="62" y="73" class="svg-bloque" style="font-size:13px">avanza 10 pasos</text><path d="M 48,88 h 10 l 6,6 h 14 l 6,-6 h 132 v 38 h -132 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="62" y="111" class="svg-bloque" style="font-size:13px">gira 90 grados</text><path d="M 48,126 h 10 l 6,6 h 14 l 6,-6 h 132 v 38 h -132 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="62" y="149" class="svg-bloque" style="font-size:13px">avanza 10 pasos</text><text x="130" y="212" text-anchor="middle" class="svg-lbl">Una orden detrás de otra,</text>
+<text x="130" y="230" text-anchor="middle" class="svg-lbl">siempre en el mismo orden.</text>
+<text x="130" y="258" text-anchor="middle" class="svg-lbl-b">Dibuja media vuelta.</text><path d="M 300,50 h 10 l 6,6 h 14 l 6,-6 h 152 v 36 h -152 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="314" y="72" class="svg-bloque" style="font-size:13px">repetir 4 veces</text><rect x="300" y="86" width="18" height="40" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><path d="M 300,126 h 10 l 6,6 h 14 l 6,-6 h 80 v 30 h -80 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="314" y="145" class="svg-bloque" style="font-size:13px"></text><path d="M 318,86 h 10 l 6,6 h 14 l 6,-6 h 120 v 36 h -120 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="332" y="108" class="svg-bloque" style="font-size:12px">avanza 10 pasos</text><text x="400" y="212" text-anchor="middle" class="svg-lbl">Lo de dentro se ejecuta</text>
+<text x="400" y="230" text-anchor="middle" class="svg-lbl">varias veces seguidas.</text>
+<text x="400" y="258" text-anchor="middle" class="svg-lbl-b">Dibuja un cuadrado.</text><path d="M 570,50 h 10 l 6,6 h 14 l 6,-6 h 160 v 36 h -160 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="584" y="72" class="svg-bloque" style="font-size:13px">si ¿tocando el borde?</text><rect x="570" y="86" width="18" height="40" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2"/><path d="M 570,126 h 10 l 6,6 h 14 l 6,-6 h 85 v 30 h -85 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--ambar-suave)" stroke="var(--ambar)" stroke-width="2" stroke-linejoin="round"/><text x="584" y="145" class="svg-bloque" style="font-size:13px"></text><path d="M 588,86 h 10 l 6,6 h 14 l 6,-6 h 120 v 36 h -120 l -6,6 h -14 l -6,-6 h -10 z" fill="var(--verde-suave)" stroke="var(--verde)" stroke-width="2" stroke-linejoin="round"/><text x="602" y="108" class="svg-bloque" style="font-size:12px">gira 180 grados</text><text x="670" y="212" text-anchor="middle" class="svg-lbl">Lo de dentro solo se ejecuta</text>
+<text x="670" y="230" text-anchor="middle" class="svg-lbl">si se cumple la condición.</text>
+<text x="670" y="258" text-anchor="middle" class="svg-lbl-b">Rebota al llegar al borde.</text></svg></div><figcaption>Las tres estructuras con las que se construye cualquier programa. El encaje de las piezas te impide colocarlas en un orden imposible.</figcaption></figure><div class="caja caja-seg"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--rojo)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 l8 3 v6 c0 5 -4 8 -8 9 c-4 -1 -8 -4 -8 -9 V6 z"/></svg> Atención</span><p>Antes de poner un robot en el suelo: comprueba que tiene sitio para moverse, que
+nadie tiene los dedos cerca de las ruedas o de un engranaje, y ten siempre a mano cómo pararlo.
+<strong>Un robot hace lo que le has programado, no lo que querías programar</strong>, y esa diferencia
+se descubre en movimiento.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 4 · no evaluable</span><p>Programa el robot (o su simulador) para que avance y se pare
+justo antes de chocar. Después haz que en vez de pararse, gire y siga. Anota cuántos intentos has
+necesitado y qué cambiaste en cada uno.</p></div></div></details>
+<div class="bloque-titulo"><h2>Ejercicios evaluables</h2><span class="et">cada uno con su criterio y su rúbrica</span></div>
+<article class="ejercicio" id="e1">
+<h3>Exposición: un robot que ya está cambiando algo <a class="chip" href="2eso-curriculo.html#c1-2" title="Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes.">Criterio 1.2</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes.</p>
+<p>Por parejas, elegid una aplicación real de la robótica y presentadla a la clase
+en <strong>cinco minutos</strong>, con turno de preguntas después.</p>
+<p>La exposición debe responder a cinco cosas:</p>
+<ol>
+<li>Qué hace ese robot y de qué tipo es.</li>
+<li>Qué se hacía antes y por qué se automatizó.</li>
+<li>Qué ha mejorado de forma comprobable.</li>
+<li>A quién ha perjudicado, aunque sea incómodo decirlo.</li>
+<li>Qué opináis vosotros, con un argumento, no con una impresión.</li>
+</ol>
+<p>Se valora que se entienda, no que sea bonito. Un guion en la mano está permitido; leer entero, no.</p>
+<p class="entrega"><strong>Entrega:</strong> Exposición oral de 5 minutos + guion entregado. Por parejas.<br><strong>Instrumento:</strong> Exposición o defensa oral</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Conocimiento del tema</th><td>No demuestra entender lo que presenta.</td><td>Conoce lo básico pero no responde preguntas.</td><td>Domina el tema y responde con solvencia.</td><td>Lo domina y responde bien incluso a preguntas no previstas.</td></tr><tr><th>Aplicaciones y contexto</th><td>Describe el robot sin situarlo en ningún uso real.</td><td>Menciona la aplicación sin explicar el cambio que supuso.</td><td>Explica el uso real y qué se hacía antes.</td><td>Lo explica con datos concretos de producción, empleo o seguridad.</td></tr><tr><th>Análisis de impacto</th><td>Solo ve ventajas o solo inconvenientes.</td><td>Menciona ambos lados sin desarrollarlos.</td><td>Analiza con equilibrio quién gana y quién pierde.</td><td>Lo analiza y sostiene una postura propia reconociendo lo que sacrifica.</td></tr><tr><th>Comunicación oral</th><td>No se le entiende o lee todo el rato.</td><td>Se entiende a medias, o se pasa mucho del tiempo.</td><td>Claro, ordenado y dentro del tiempo.</td><td>Claro, ordenado y consigue que la clase se interese.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e1"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e2">
+<h3>Prueba práctica: las tripas del robot <a class="chip" href="2eso-curriculo.html#c1-4" title="Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características.">Criterio 1.4</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características.</p>
+<p>Prueba individual en el aula, con un robot real o su simulador delante.</p>
+<ol>
+<li><strong>Identifica</strong> cada componente del robot y di si es sensor, actuador, efector o
+controlador.</li>
+<li><strong>Explica</strong> qué mide cada sensor y en qué unidades, y qué movimiento produce cada
+actuador.</li>
+<li><strong>Predice</strong>: se te describirán dos situaciones y tendrás que decir cómo respondería el
+robot y por qué.</li>
+<li><strong>Diagnostica</strong>: se te presentará un robot que se comporta de forma rara y tendrás que
+proponer qué componente sospechas que falla y cómo lo comprobarías.</li>
+</ol>
+<p class="entrega"><strong>Entrega:</strong> Hoja de prueba resuelta en el aula. Individual.<br><strong>Instrumento:</strong> Prueba práctica</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Identificación de componentes</th><td>Confunde sensores con actuadores.</td><td>Identifica los componentes evidentes.</td><td>Identifica y clasifica correctamente todos los componentes.</td><td>Los clasifica y explica por qué ese robot lleva esos y no otros.</td></tr><tr><th>Comprensión del funcionamiento</th><td>No explica qué hace cada pieza.</td><td>Explica la función de algunas piezas.</td><td>Explica qué mide o qué produce cada componente.</td><td>Lo explica y relaciona el conjunto con el esquema percibir–decidir–actuar.</td></tr><tr><th>Predicción del comportamiento</th><td>Las predicciones no se corresponden con el robot.</td><td>Acierta en el caso sencillo y falla en el otro.</td><td>Predice correctamente las dos situaciones.</td><td>Las predice y anticipa en qué condiciones fallaría.</td></tr><tr><th>Diagnóstico</th><td>No propone ninguna causa razonable.</td><td>Propone una causa sin forma de comprobarla.</td><td>Propone una causa probable y cómo comprobarla.</td><td>Propone varias causas ordenadas de más a menos probable.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e2"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e3">
+<h3>Misión del robot: recorrido con obstáculos <a class="chip" href="2eso-curriculo.html#c2-1" title="Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.">Criterio 2.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.</p>
+<p>Por parejas, programad el robot para completar una misión: recorrer un circuito
+marcado en el suelo del aula, detectar los obstáculos, esquivarlos y llegar al final.</p>
+<p>Este ejercicio <strong>se evalúa mientras lo hacéis</strong>, no solo por el resultado. Se observará
+cómo os organizáis, cómo reaccionáis cuando algo falla y si probáis por partes en lugar de a lo loco.
+Que el robot llegue al final ayuda, pero no es lo único que cuenta.</p>
+<p>Llevad un registro breve: cada intento fallido, qué creíais que pasaba y qué cambiasteis. Ese
+registro forma parte de la entrega y va al portfolio.</p>
+<p class="entrega"><strong>Entrega:</strong> Observación en el aula durante las sesiones de trabajo + registro de intentos. Por parejas.<br><strong>Instrumento:</strong> Observación en el aula con lista de cotejo</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Uso de las estructuras de programación</th><td>El programa no usa bucles ni condiciones donde hacen falta.</td><td>Las usa, pero de forma poco eficaz.</td><td>Usa bucle y condición correctamente para resolver la misión.</td><td>Las usa con soltura y el programa resulta claro y breve.</td></tr><tr><th>Método de trabajo</th><td>Cambia cosas al azar hasta que algo sale.</td><td>Prueba con cierto orden pero sin aislar los problemas.</td><td>Prueba por partes y cambia una cosa cada vez.</td><td>Trabaja con método y comprueba sus suposiciones antes de cambiar nada.</td></tr><tr><th>Reacción ante el error</th><td>Se bloquea o abandona cuando falla.</td><td>Insiste, pero repitiendo lo mismo.</td><td>Reacciona al fallo buscando la causa.</td><td>Aprovecha cada fallo para entender mejor el sistema.</td></tr><tr><th>Colaboración</th><td>Uno trabaja y el otro mira.</td><td>Se reparten, pero sin coordinarse.</td><td>Se reparten el trabajo y se comunican bien.</td><td>Se coordinan, se corrigen entre ellos y ambos entienden todo el programa.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e3"> Marcar como entregado</label>
+</article>
+<section class="resumen"><h2>Lo esencial de esta unidad</h2><ul><li>Un robot percibe, decide y actúa: si le falta una de las tres, no es un robot.</li><li>Industriales (dentro de la fábrica, aislados) y de servicios (fuera, junto a personas).</li><li>Se automatiza lo peligroso, lo repetitivo y lo que exige una precisión imposible a mano.</li><li>Sensores, controlador, actuadores y efectores; los grados de libertad miden su versatilidad.</li><li>Los robots móviles tienen un problema propio: saber dónde están.</li><li>Programar un robot usa las mismas estructuras que cualquier programa, pero el mundo real no es perfecto.</li></ul></section>
+<nav class="nav-ud"><a href="2eso-ud02.html"><small>← Unidad anterior</small>UD2. Por dentro del ordenador</a><a href="2eso-ud04.html" style="text-align:right"><small>Unidad siguiente →</small>UD4. Internet de las cosas</a></nav>
+</main>
+<footer>
+  <div class="pie-int">
+    <span>Computación y Robótica · 2.º ESO · Coria del Río (Sevilla)</span>
+    <span><a href="index.html">Inicio</a> · <a href="glosario.html">Glosario</a></span>
+  </div>
+  <div class="pie-lic">
+<p><strong>Computación y Robótica · 2.º ESO</strong>, de Emilio Rubio, está bajo licencia
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">CC BY-NC-SA 4.0</a>. Puedes copiarlo, distribuirlo y adaptarlo
+<strong>sin fines comerciales</strong>, siempre que cites la autoría y compartas el resultado con
+esta misma licencia.</p>
+<p class="lic-nota">Quedan fuera de esta licencia los textos literales del currículo oficial, que
+proceden de la normativa de la Junta de Andalucía, y cualquier material de terceros que aparezca
+citado con su propia licencia.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD5. Aplicaciones móviles · 2.º ESO</title>
+<meta name="description" content="Programas que esperan a que pase algo">
+<meta name="author" content="Emilio Rubio">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='19'>&#9881;</text></svg>">
+</head>
+<body>
+<header class="barra">
+  <div class="barra-int">
+    <a class="marca" href="index.html">
+      <span class="sello">CYR·2</span>
+      <span>Computación y Robótica<small>2.º ESO · Coria del Río (Sevilla)</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">2.º ESO</a><a href="2eso-curriculo.html">Currículo</a><a href="2eso-rubricas.html">Rúbricas</a><a href="2eso-presentacion.html">Presentación</a><a href="2eso-diagnostico.html">¿Qué sé ya?</a><a href="glosario.html">Glosario</a>
+      <button type="button" data-tema-bt aria-pressed="false" title="Cambiar entre modo claro y oscuro">Tema</button>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="cabecera-ud">
+<p class="eyebrow">2.º ESO · Unidad 5 · 1.ª vuelta</p>
+<h1>Aplicaciones móviles</h1>
+<p class="subtitulo">Programas que esperan a que pase algo</p>
+<p>Llevas todo el curso escribiendo programas que empiezan, hacen cosas en orden y
+terminan. Una aplicación móvil no funciona así, y ese cambio de mentalidad es lo más importante de
+esta unidad.</p>
+<p>Una app arranca y <strong>se queda esperando</strong>. Espera a que toques un botón, a que gires el
+móvil, a que llegue un mensaje. No tiene un guion: tiene reacciones.</p>
+<p>Al final construirás la tuya. Y de paso descubrirás qué es lo que las aplicaciones que ya tienes
+instaladas saben de ti.</p>
+<div class="ficha">
+  <span class="dato"><b>7</b> sesiones</span>
+  <span class="dato"><b>5</b> apartados de teoría</span>
+  <span class="dato"><b>4</b> ejercicios evaluables</span>
+</div>
+<div class="ficha" style="margin-top:.6rem"><span class="dato">Criterios</span><a class="chip" href="2eso-curriculo.html#c2-2" title="Entender el funcionamiento interno de las aplicaciones móviles y cómo se construyen, dando respuesta a las posibles demandas del escenario a resolver.">2.2</a> <a class="chip" href="2eso-curriculo.html#c2-3" title="Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones.">2.3</a> <a class="chip" href="2eso-curriculo.html#c6-1" title="Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red.">6.1</a> <a class="chip" href="2eso-curriculo.html#c1-2" title="Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes.">1.2</a></div>
+<div class="ficha" style="margin-top:.4rem"><span class="dato">Saberes</span><a class="chip s" href="2eso-curriculo.html#sD-1" title="Ejemplos de IDEs de lenguajes de bloques para móviles.">D.1</a> <a class="chip s" href="2eso-curriculo.html#sD-2" title="Programación orientada a eventos: características, ventajas e inconvenientes.">D.2</a> <a class="chip s" href="2eso-curriculo.html#sD-3" title="Dependencia de eventos.">D.3</a> <a class="chip s" href="2eso-curriculo.html#sD-4" title="Tipos de eventos.">D.4</a> <a class="chip s" href="2eso-curriculo.html#sD-5" title="Descripción de eventos de E/S.">D.5</a> <a class="chip s" href="2eso-curriculo.html#sI-1" title="Privacidad e identidad.">I.1</a> <a class="chip s" href="2eso-curriculo.html#sI-2" title="Tipología de los diferentes riesgos por la exposición de los usuarios.">I.2</a> <a class="chip s" href="2eso-curriculo.html#sA-5" title="Pantallas de interacción con el usuario.">A.5</a></div>
+<p class="reto">Una app no se ejecuta de arriba abajo como los programas que has hecho. ¿Entonces cómo funciona?</p>
+</div>
+<section class="mapa">
+  <h2>Mapa de la unidad</h2>
+  <p class="pista">Línea continua: teoría. Línea discontinua y borde de trazos: ejercicio evaluable y
+  la teoría de la que depende. Toca cualquier nodo para ir a su contenido.</p>
+  <div class="mapa-lienzo"><svg viewBox="0 0 900 450" role="img" aria-label="Mapa conceptual de la unidad 5"><path class="enlace" data-enlace-de="t1" d="M 248 225.0 C 290 225.0 290 65.0 330 65.0"/><path class="enlace" data-enlace-de="t2" d="M 248 225.0 C 290 225.0 290 145.0 330 145.0"/><path class="enlace" data-enlace-de="t3" d="M 248 225.0 C 290 225.0 290 225.0 330 225.0"/><path class="enlace" data-enlace-de="t4" d="M 248 225.0 C 290 225.0 290 305.0 330 305.0"/><path class="enlace" data-enlace-de="t5" d="M 248 225.0 C 290 225.0 290 385.0 330 385.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 65.0 C 600 65.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 145.0 C 600 145.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e1" d="M 556 225.0 C 600 225.0 600 87.0 642 87.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 65.0 C 600 65.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 145.0 C 600 145.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e2" d="M 556 225.0 C 600 225.0 600 179.0 642 179.0"/><path class="enlace dep" data-enlace-de="e3" d="M 556 385.0 C 600 385.0 600 271.0 642 271.0"/><path class="enlace dep" data-enlace-de="e4" d="M 556 305.0 C 600 305.0 600 363.0 642 363.0"/><g class="nodo centro"><rect class="caja" x="16" y="189.0" width="232" height="72" rx="5"/><text x="132" y="219.0" text-anchor="middle">UD5</text><text x="132" y="239.0" text-anchor="middle" font-size="11.5" font-weight="500">Aplicaciones móviles</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t1"><rect class="caja" x="330" y="36.0" width="226" height="58" rx="4"/><text x="443" y="63.0" text-anchor="middle">Programar para un móvil</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t2"><rect class="caja" x="330" y="116.0" width="226" height="58" rx="4"/><text x="443" y="143.0" text-anchor="middle">Programar por eventos</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t3"><rect class="caja" x="330" y="196.0" width="226" height="58" rx="4"/><text x="443" y="223.0" text-anchor="middle">Qué tipos de eventos hay</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t4"><rect class="caja" x="330" y="276.0" width="226" height="58" rx="4"/><text x="443" y="303.0" text-anchor="middle">El móvil como mando</text></g><g class="nodo teoria" tabindex="0" role="link" data-destino="t5"><rect class="caja" x="330" y="356.0" width="226" height="58" rx="4"/><text x="443" y="375.5" text-anchor="middle">Lo que tu móvil sabe de</text><text x="443" y="390.5" text-anchor="middle">ti</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e1"><rect class="caja" x="642" y="54.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="70.0" text-anchor="middle">CRITERIO 2.2</text><text x="762" y="82.5" text-anchor="middle">Prueba práctica:</text><text x="762" y="97.5" text-anchor="middle">desmonta una app</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e2"><rect class="caja" x="642" y="146.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="162.0" text-anchor="middle">CRITERIO 2.3</text><text x="762" y="182.0" text-anchor="middle">Tu aplicación móvil</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e3"><rect class="caja" x="642" y="238.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="254.0" text-anchor="middle">CRITERIO 6.1</text><text x="762" y="266.5" text-anchor="middle">Cuestionario: tu huella</text><text x="762" y="281.5" text-anchor="middle">en el móvil</text></g><g class="nodo tarea" tabindex="0" role="link" data-destino="e4"><rect class="caja" x="642" y="330.0" width="240" height="66" rx="4"/><text class="cod" x="762" y="346.0" text-anchor="middle">CRITERIO 1.2</text><text x="762" y="358.5" text-anchor="middle">Informe: la robótica que</text><text x="762" y="373.5" text-anchor="middle">se maneja con el móvil</text></g></svg></div>
+  <ul class="mapa-lista"><li><a href="#t1" data-destino="t1"><span class="cod">TEORÍA</span>Programar para un móvil</a></li><li><a href="#t2" data-destino="t2"><span class="cod">TEORÍA</span>Programar por eventos</a></li><li><a href="#t3" data-destino="t3"><span class="cod">TEORÍA</span>Qué tipos de eventos hay</a></li><li><a href="#t4" data-destino="t4"><span class="cod">TEORÍA</span>El móvil como mando</a></li><li><a href="#t5" data-destino="t5"><span class="cod">TEORÍA</span>Lo que tu móvil sabe de ti</a></li><li class="tarea"><a href="#e1" data-destino="e1"><span class="cod">EJERCICIO · CRITERIO 2.2</span>Prueba práctica: desmonta una app</a></li><li class="tarea"><a href="#e2" data-destino="e2"><span class="cod">EJERCICIO · CRITERIO 2.3</span>Tu aplicación móvil</a></li><li class="tarea"><a href="#e3" data-destino="e3"><span class="cod">EJERCICIO · CRITERIO 6.1</span>Cuestionario: tu huella en el móvil</a></li><li class="tarea"><a href="#e4" data-destino="e4"><span class="cod">EJERCICIO · CRITERIO 1.2</span>Informe: la robótica que se maneja con el móvil</a></li></ul>
+</section>
+<section class="progreso" data-progreso-ud="2eso5">
+<strong>Tu progreso en esta unidad</strong>
+<div class="barra-p"><div class="relleno"></div></div>
+<span data-progreso-txt style="font-size:.88rem;color:var(--tinta-2)"></span>
+<p class="aviso">Las marcas se guardan solo en este navegador y en este dispositivo: no las ve el
+profesorado y no sustituyen a la entrega real. Si usas un ordenador compartido del aula, es normal que
+no aparezcan. <button type="button" class="bt" data-reset>Desmarcar todo</button></p>
+</section>
+<div class="bloque-titulo"><h2>Teoría</h2><span class="et">5 apartados</span><button type="button" class="bt" data-abrir-todo data-abierto="0" style="margin-left:auto">Desplegar todo</button></div>
+<details class="seccion" id="t1" open><summary><span class="num">1</span>Programar para un móvil<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Una <a class="termino" href="glosario.html#app" title="Aplicación móvil: Programa diseñado para un teléfono o una tableta, pensado para usarse con los dedos y en pantalla pequeña.">aplicación móvil</a> es un programa pensado para una pantalla pequeña, unos dedos y una
+batería. Esas tres condiciones cambian las decisiones de diseño más de lo que parece: no caben menús
+enormes, no hay ratón que apunte con precisión, y todo lo que se ejecute de más se nota en el
+consumo.</p>
+<p>Para crearlas se usa un <a class="termino" href="glosario.html#ide" title="Entorno de desarrollo: Programa que sirve para crear otros programas. Reúne el editor, las pruebas y el botón de ejecutar en un solo sitio.">entorno de desarrollo</a>: un programa que reúne el editor, el diseñador de pantallas y el
+botón de probar. Los hay de bloques, como los que usarás aquí, que permiten montar una app arrastrando
+piezas igual que en la UD1.</p>
+<h4>Dos mitades que se trabajan por separado</h4>
+<p>Toda app tiene un <strong>diseño</strong> (qué se ve: botones, etiquetas, cajas de texto, imágenes)
+y un <strong>comportamiento</strong> (qué ocurre cuando alguien los toca). En los entornos de bloques
+esto es literal: hay una vista para colocar los elementos en la pantalla y otra para programar qué hace
+cada uno.</p>
+<p>Conviene diseñar primero. Si no sabes qué botones va a tener, no puedes programar qué hacen.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Fíjate en una app que uses mucho y cuenta cuántos elementos hay en su pantalla
+principal. Casi siempre son menos de diez. No es falta de ideas: es que en una pantalla de seis
+pulgadas todo lo que añades le quita sitio a lo demás.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 1 · no evaluable</span><p>Dibuja en papel la pantalla de una app que te gustaría hacer.
+Coloca solo los elementos imprescindibles y, al lado de cada uno, escribe qué debería pasar al
+tocarlo.</p></div></div></details>
+<details class="seccion" id="t2"><summary><span class="num">2</span>Programar por eventos<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>La <a class="termino" href="glosario.html#programacion-eventos" title="Programación orientada a eventos: Forma de programar en la que el código no sigue un guion fijo, sino que espera a que ocurra algo y reacciona.">programación orientada a eventos</a> es la gran diferencia. En lugar de un programa que se
+ejecuta de principio a fin, tienes <strong>trozos de código independientes</strong>, cada uno
+enganchado a un <a class="termino" href="glosario.html#evento" title="Evento: Algo que ocurre y hace que el programa reaccione: pulsar una tecla, hacer clic, recibir un mensaje o chocar con algo.">evento</a>, que se quedan dormidos hasta que su evento ocurre.</p>
+<p>Ya lo viste en la UD1 con los bloques de «al hacer clic en la bandera». Aquí es el modelo
+completo: prácticamente todo el programa son bloques de ese tipo.</p>
+<h4>Ventajas</h4>
+<ul>
+<li>El programa <strong>no consume</strong> mientras espera: esencial en un móvil.</li>
+<li>Responde en el momento, sin tener que comprobar constantemente si ha pasado algo.</li>
+<li>Cada trozo es independiente, así que puedes añadir un botón sin tocar los demás.</li>
+</ul>
+<h4>Inconvenientes</h4>
+<ul>
+<li><strong>Cuesta seguir el hilo:</strong> no hay un orden que leer de arriba abajo, así que entender
+un programa ajeno es más difícil.</li>
+<li>Los eventos pueden ocurrir <strong>en cualquier orden</strong>, incluso en uno que no habías
+previsto. Si alguien pulsa «enviar» antes de escribir nada, tu programa tiene que aguantarlo.</li>
+<li>La información hay que guardarla en <a class="termino" href="glosario.html#variable-prog" title="Variable (programación): Espacio con nombre donde el programa guarda un dato que puede cambiar durante la ejecución.">variables</a> compartidas, porque cada trozo
+se ejecuta por su cuenta y no recuerda lo que hizo el anterior.</li>
+</ul>
+<p>A esa relación entre trozos se le llama <strong>dependencia de eventos</strong>: cuando un bloque
+solo tiene sentido si antes ocurrió otro. Es la principal fuente de errores raros en las apps.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 2 · no evaluable</span><p>Coge una app sencilla que uses y haz una lista de todos los
+eventos que se te ocurran (tocar, deslizar, girar, recibir una notificación). Para cada uno, escribe
+qué hace la app. Después piensa en uno que pueda ocurrir «a destiempo» y qué debería pasar.</p></div></div></details>
+<details class="seccion" id="t3"><summary><span class="num">3</span>Qué tipos de eventos hay<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>No todos los eventos vienen de que alguien toque la pantalla. Conviene conocer las
+familias, porque abren posibilidades muy distintas.</p>
+<ul>
+<li><strong>De interacción:</strong> tocar, mantener pulsado, deslizar, escribir. Los más habituales.</li>
+<li><strong>De sensor:</strong> girar el móvil, moverlo, cambiar la luz ambiente, cambiar de
+ubicación. El móvil lleva más sensores que el robot de la UD3.</li>
+<li><strong>De tiempo:</strong> cada cierto intervalo, o pasado un plazo.</li>
+<li><strong>De comunicación:</strong> llega un mensaje, se conecta un dispositivo por
+<a class="termino" href="glosario.html#ble" title="Bluetooth de baja energía: Variante del Bluetooth pensada para enviar pocos datos gastando muy poca batería. Es la que usan pulseras, balizas y muchos sensores.">Bluetooth</a>, responde un servidor.</li>
+<li><strong>De ciclo de vida:</strong> la app se abre, se va a segundo plano, se cierra. Aquí es donde
+se guarda lo que no quieres perder.</li>
+</ul>
+<h4>Entrada y salida en una app</h4>
+<p>La <a class="termino" href="glosario.html#entrada-salida" title="Entrada y salida: La entrada es la información que el programa recibe (una tecla, un clic, un sensor). La salida es lo que devuelve (un dibujo, un sonido, un mensaje).">entrada y salida</a> sigue siendo la misma idea de siempre. La entrada llega por los eventos: lo
+que escribe la persona, lo que miden los sensores, lo que llega por la red. La salida es lo que la app
+muestra, dice, vibra o envía.</p>
+<p>Describir bien un evento de entrada significa saber tres cosas: <strong>qué lo dispara</strong>,
+<strong>qué dato trae</strong> y <strong>qué hay que hacer con él</strong>. Si falta alguna, el
+programa fallará justo ahí.</p><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 3 · no evaluable</span><p>Diseña sobre el papel una app que use al menos tres familias de
+eventos distintas. Por ejemplo: un botón que empieza, un sensor que detecta movimiento y un temporizador
+que avisa. Escribe la tabla de los tres eventos con qué los dispara, qué dato traen y qué hacen.</p></div></div></details>
+<details class="seccion" id="t4"><summary><span class="num">4</span>El móvil como mando<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Una de las cosas más útiles que puede hacer una app es <strong>controlar otra
+cosa</strong>. El móvil que llevas en el bolsillo es una pantalla, un teclado, un altavoz y una
+conexión: exactamente lo que le falta a un robot o a un sistema conectado.</p>
+<p>Por eso hoy casi ningún robot de servicio lleva mando propio. El dron se maneja desde el móvil, el
+aspirador se programa desde una app, y los robots educativos que usas en clase se conectan por
+<a class="termino" href="glosario.html#ble" title="Bluetooth de baja energía: Variante del Bluetooth pensada para enviar pocos datos gastando muy poca batería. Es la que usan pulseras, balizas y muchos sensores.">bluetooth de baja energía</a> y reciben órdenes desde la pantalla.</p>
+<p>Esto ha cambiado quién puede usar un robot. Antes hacía falta un mando específico y formación; ahora
+la interfaz es la que todo el mundo ya sabe manejar. Ha bajado la barrera de entrada, y eso ha llevado
+la robótica a sitios donde antes no llegaba: agricultura pequeña, inspección de obras, ayuda a personas
+con movilidad reducida.</p>
+<p>También tiene su cara incómoda. Si el mando es una app, quien controla la app controla el robot; y
+si el fabricante deja de mantenerla o cierra el servicio, un aparato que funciona perfectamente puede
+quedarse inservible.</p><div class="caja caja-vida"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tinta-3)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 A7 7 0 1 0 11 18 A7 7 0 1 0 11 4 M16 16 L21 21"/></svg> En tu vida diaria</span><p>Busca cuántos aparatos de tu casa se controlan desde una app: el televisor, el
+altavoz, quizá la calefacción o el coche. Pregúntate qué pasaría con cada uno si mañana esa app dejara
+de estar disponible.</p></div></div></details>
+<details class="seccion" id="t5"><summary><span class="num">5</span>Lo que tu móvil sabe de ti<span class="flecha"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5 l7 7 l-7 7"/></svg></span></summary><div class="cuerpo"><p>Cada app que instalas pide <a class="termino" href="glosario.html#permiso-app" title="Permiso: Autorización que una aplicación pide para usar una parte del móvil: la cámara, el micrófono, los contactos o la ubicación.">permisos</a>: acceso a la cámara, al
+micrófono, a los contactos, a la ubicación, a las fotos. Algunos los necesita de verdad; otros no, y
+los pide porque esos datos valen dinero.</p>
+<p>La regla para decidir es sencilla: <strong>¿necesita ese permiso para hacer lo que promete?</strong>
+Una app de linterna que pide tus contactos no está confundida, está recogiendo datos.</p>
+<h4>Identidad y privacidad</h4>
+<p>Tu <a class="termino" href="glosario.html#identidad-digital" title="Identidad digital: Conjunto de datos que te identifican en internet: tus cuentas, tus publicaciones y el rastro que dejas.">identidad digital</a> es el conjunto de datos que te identifican en la red: tus cuentas, lo que
+publicas y el rastro que dejas sin publicar nada. Esa segunda parte es la que casi nadie tiene en
+cuenta, y es la más grande.</p>
+<p>Los riesgos de exponerse de más no son abstractos: suplantación de identidad, que alguien reconstruya
+tus horarios y tus rutinas a partir de tus publicaciones, o que una foto acabe en un sitio donde tú
+nunca la pusiste. Los <a class="termino" href="glosario.html#metadatos" title="Metadatos: Datos ocultos que acompañan a un archivo: fecha, modelo de cámara y, a veces, el lugar exacto donde se hizo la foto.">metadatos</a> de una foto pueden incluir la fecha y las coordenadas exactas de
+dónde se hizo.</p>
+<h4>Protección activa</h4>
+<p>Tres hábitos que sirven de verdad: revisar los permisos cada cierto tiempo y quitar los que no hagan
+falta, no aceptar a desconocidos que luego tendrán acceso a todo lo que publicas, y pensar antes de
+subir algo <strong>quién podría verlo dentro de cinco años</strong>.</p><div class="caja caja-seg"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--rojo)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 l8 3 v6 c0 5 -4 8 -8 9 c-4 -1 -8 -4 -8 -9 V6 z"/></svg> Atención</span><p>Si alguien te presiona, te amenaza o te pide imágenes íntimas, <strong>no es
+culpa tuya y no estás solo</strong>. No respondas, guarda las pruebas con la fecha visible, bloquea a
+esa persona y cuéntaselo cuanto antes a un adulto de confianza: tu familia, tu tutor o tutora, o el
+departamento de orientación. Existen también el teléfono <strong>017</strong> de ciberseguridad y el
+<strong>116 111</strong> de ayuda a la infancia, gratuitos y confidenciales. Ceder nunca detiene el
+chantaje: pedir ayuda sí lo corta.</p></div><div class="caja caja-act"><span class="et"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--ambar-txt)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 h13 M8 12 h13 M8 18 h13 M3 6 h.01 M3 12 h.01 M3 18 h.01"/></svg> Actividad 4 · no evaluable</span><p>Revisa los permisos de las cinco apps que más uses. Para cada
+permiso, decide si es necesario para lo que la app hace. Quita los que no lo sean y anota cuántos has
+quitado.</p></div></div></details>
+<div class="bloque-titulo"><h2>Ejercicios evaluables</h2><span class="et">cada uno con su criterio y su rúbrica</span></div>
+<article class="ejercicio" id="e1">
+<h3>Prueba práctica: desmonta una app <a class="chip" href="2eso-curriculo.html#c2-2" title="Entender el funcionamiento interno de las aplicaciones móviles y cómo se construyen, dando respuesta a las posibles demandas del escenario a resolver.">Criterio 2.2</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Entender el funcionamiento interno de las aplicaciones móviles y cómo se construyen, dando respuesta a las posibles demandas del escenario a resolver.</p>
+<p>Prueba individual en el aula. Se te dará una aplicación ya construida en el
+entorno de bloques y tendrás que demostrar que entiendes cómo está hecha por dentro.</p>
+<ol>
+<li><strong>Localiza</strong> todos los eventos del programa y di qué dispara cada uno.</li>
+<li><strong>Explica</strong> qué ocurre al pulsar un botón concreto, siguiendo el recorrido completo.</li>
+<li><strong>Predice</strong> qué pasaría si los eventos ocurrieran en un orden distinto al previsto.</li>
+<li><strong>Modifica</strong>: se te pedirán dos cambios concretos en el comportamiento.</li>
+</ol>
+<p class="entrega"><strong>Entrega:</strong> Hoja de prueba + app modificada. Individual, en el aula.<br><strong>Instrumento:</strong> Prueba práctica</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Identificación de los eventos</th><td>No localiza los eventos del programa.</td><td>Localiza los más evidentes.</td><td>Localiza todos los eventos y qué los dispara.</td><td>Los localiza y distingue a qué familia pertenece cada uno.</td></tr><tr><th>Comprensión del funcionamiento</th><td>No consigue seguir qué hace la app.</td><td>Sigue el recorrido con ayuda.</td><td>Explica correctamente el recorrido completo de una acción.</td><td>Lo explica e identifica las dependencias entre eventos.</td></tr><tr><th>Predicción ante lo inesperado</th><td>No prevé ningún problema.</td><td>Prevé un fallo sin explicar la causa.</td><td>Predice correctamente qué fallaría y por qué.</td><td>Lo predice y propone cómo evitarlo.</td></tr><tr><th>Modificación</th><td>Los cambios no funcionan.</td><td>Consigue uno de los dos cambios.</td><td>Realiza los dos cambios correctamente.</td><td>Los realiza sin romper nada del resto de la app.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e1"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e2">
+<h3>Tu aplicación móvil <a class="chip" href="2eso-curriculo.html#c2-3" title="Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones.">Criterio 2.3</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones.</p>
+<p>Por parejas. Diseñad y construid una aplicación que resuelva algo real para
+vosotros o para el instituto.</p>
+<p>Requisitos mínimos:</p>
+<ol>
+<li>Al menos <strong>tres eventos</strong> de familias distintas (no valen tres botones).</li>
+<li>Al menos una <strong>variable</strong> que guarde información entre eventos.</li>
+<li>Una pantalla que se entienda sin explicaciones.</li>
+<li>Que aguante que alguien haga las cosas en el orden equivocado.</li>
+<li>Tabla de pruebas con cinco situaciones, incluyendo dos «raras».</li>
+</ol>
+<p>Ideas que funcionan: contador para un juego, temporizador de estudio, cuestionario sobre el pueblo,
+lista de tareas, conversor de unidades, o un mando sencillo para el robot de la UD3.</p>
+<p>Entregad el diseño de la pantalla en papel <strong>antes</strong> de empezar a programar.</p>
+<p class="entrega"><strong>Entrega:</strong> App ejecutable + diseño previo + tabla de pruebas + ficha de portfolio. Por parejas.<br><strong>Instrumento:</strong> Proyecto o producto final</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Funcionamiento</th><td>La app no se ejecuta o no hace lo previsto.</td><td>Funciona en el caso normal y falla fácilmente.</td><td>Funciona de forma estable.</td><td>Funciona y responde bien aunque se use en desorden.</td></tr><tr><th>Uso de los eventos</th><td>Usa un solo tipo de evento o los usa mal.</td><td>Usa varios eventos pero alguno forzado.</td><td>Tres familias de eventos usadas con sentido.</td><td>Usadas con sentido y con las dependencias bien resueltas.</td></tr><tr><th>Diseño de la pantalla</th><td>No se entiende qué hay que hacer.</td><td>Se entiende a medias.</td><td>Pantalla clara, con lo imprescindible y bien colocado.</td><td>Clara, probada con alguien ajeno y mejorada a partir de lo observado.</td></tr><tr><th>Gestión de la información</th><td>No guarda datos entre eventos.</td><td>Usa variables pero con errores.</td><td>Las variables guardan y recuperan la información correctamente.</td><td>Además controla los casos en que el dato aún no existe.</td></tr><tr><th>Trabajo en pareja</th><td>El trabajo recae en una sola persona.</td><td>Reparto desigual.</td><td>Ambos participan y saben explicar toda la app.</td><td>Reparto equilibrado y coordinación visible en el resultado.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e2"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e3">
+<h3>Cuestionario: tu huella en el móvil <a class="chip" href="2eso-curriculo.html#c6-1" title="Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red.">Criterio 6.1</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red.</p>
+<p>Cuestionario individual sobre privacidad, identidad digital y protección
+personal en la red. Incluye:</p>
+<ul>
+<li>Preguntas sobre permisos: cuáles necesita realmente cada tipo de app.</li>
+<li>Identificación de riesgos en situaciones concretas.</li>
+<li>Qué metadatos lleva una foto y qué se puede deducir de ellos.</li>
+<li>Dos casos en los que tendrás que decir qué harías y a quién acudirías.</li>
+</ul>
+<p>Las respuestas sobre tus propios permisos son anónimas: lo que se evalúa es el criterio, no lo que
+tengas instalado.</p>
+<p class="entrega"><strong>Entrega:</strong> Cuestionario resuelto en el aula. Individual.<br><strong>Instrumento:</strong> Cuestionario</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Criterio sobre permisos</th><td>Acepta cualquier permiso sin valorarlo.</td><td>Reconoce algunos permisos excesivos.</td><td>Distingue bien qué permiso necesita cada tipo de app.</td><td>Lo distingue y razona qué se podría deducir de los datos cedidos.</td></tr><tr><th>Identificación de riesgos</th><td>No reconoce los riesgos de la exposición.</td><td>Reconoce los más evidentes.</td><td>Identifica correctamente los riesgos de cada situación.</td><td>Los identifica e incluye alguno que no es evidente.</td></tr><tr><th>Hábitos de protección</th><td>No propone medidas.</td><td>Propone medidas genéricas.</td><td>Propone medidas concretas y aplicables.</td><td>Concretas, aplicables y priorizadas según el riesgo.</td></tr><tr><th>Actuación ante una situación grave</th><td>No sabe qué hacer ni a quién acudir.</td><td>Sabe que hay que pedir ayuda, sin concretar.</td><td>Sabe qué hacer, qué no hacer y a quién acudir.</td><td>Lo sabe y explica por qué ceder empeora la situación.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e3"> Marcar como entregado</label>
+</article>
+<article class="ejercicio" id="e4">
+<h3>Informe: la robótica que se maneja con el móvil <a class="chip" href="2eso-curriculo.html#c1-2" title="Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes.">Criterio 1.2</a></h3>
+<p class="criterio-txt"><strong>Se evalúa:</strong> Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes.</p>
+<p>En la UD3 estudiaste para qué se usan los robots. Ahora analiza cómo ha cambiado
+su papel desde que se controlan con una aplicación.</p>
+<p>Elige un tipo de robot manejado desde el móvil (dron, aspirador, robot educativo, cortacésped,
+dispositivo de asistencia) y escribe un informe que responda a:</p>
+<ol>
+<li>Qué hace ese robot y qué parte del control lleva la app.</li>
+<li>Cómo se manejaba antes algo parecido, y qué hacía falta saber.</li>
+<li>Quién puede usarlo ahora que antes no podía.</li>
+<li>Qué se pierde: dependencia del fabricante, de la batería del móvil, de la conexión.</li>
+<li>Tu valoración, argumentada.</li>
+</ol>
+<p class="entrega"><strong>Entrega:</strong> Informe con fuentes citadas. Individual o por parejas.<br><strong>Instrumento:</strong> Informe de análisis</p>
+<details class="rub"><summary>Ver la rúbrica con la que se corrige</summary><div class="tabla-env"><table><thead><tr><th>Indicador</th><th>En inicio (1–4)</th><th>Adecuado (5–6)</th><th>Notable (7–8)</th><th>Excelente (9–10)</th></tr></thead><tbody><tr><th>Comprensión del sistema</th><td>No distingue qué hace el robot y qué la app.</td><td>Los distingue de forma general.</td><td>Explica con claridad el reparto entre robot y aplicación.</td><td>Lo explica relacionándolo con sensores, control y actuadores.</td></tr><tr><th>Análisis del cambio social</th><td>No aborda quién puede usarlo.</td><td>Lo menciona sin desarrollarlo.</td><td>Analiza cómo ha cambiado el acceso a esa tecnología.</td><td>Lo analiza con ejemplos concretos de usos nuevos.</td></tr><tr><th>Visión crítica</th><td>Solo ve ventajas.</td><td>Menciona algún inconveniente.</td><td>Analiza con equilibrio lo que se gana y lo que se pierde.</td><td>Lo analiza e incluye la dependencia del fabricante y la obsolescencia.</td></tr><tr><th>Uso de fuentes</th><td>Sin fuentes o sin identificar.</td><td>Fuentes citadas de forma incompleta.</td><td>Fuentes identificadas y valoradas.</td><td>Fuentes contrastadas entre sí.</td></tr></tbody></table></div></details>
+<label class="marcar"><input type="checkbox" data-tarea="e4"> Marcar como entregado</label>
+</article>
+<section class="resumen"><h2>Lo esencial de esta unidad</h2><ul><li>Una app se diseña para pantalla pequeña, dedos y batería; primero el diseño, después el comportamiento.</li><li>Programación orientada a eventos: trozos independientes que esperan a que ocurra algo.</li><li>Ventajas (no consume esperando, responde al momento) e inconvenientes (cuesta seguir el hilo, orden imprevisible).</li><li>Familias de eventos: interacción, sensor, tiempo, comunicación y ciclo de vida.</li><li>El móvil como mando ha abierto la robótica a mucha más gente, a cambio de depender del fabricante.</li><li>Permisos, identidad digital y metadatos: qué cede realmente cada app que instalas.</li></ul></section>
+<nav class="nav-ud"><a href="2eso-ud04.html"><small>← Unidad anterior</small>UD4. Internet de las cosas</a><a href="2eso-ud06.html" style="text-align:right"><small>Unidad siguiente →</small>UD6. Páginas web</a></nav>
+</main>
+<footer>
+  <div class="pie-int">
+    <span>Computación y Robótica · 2.º ESO · Coria del Río (Sevilla)</span>
+    <span><a href="index.html">Inicio</a> · <a href="glosario.html">Glosario</a></span>
+  </div>
+  <div class="pie-lic">
+<p><strong>Computación y Robótica · 2.º ESO</strong>, de Emilio Rubio, está bajo licencia
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">CC BY-NC-SA 4.0</a>. Puedes copiarlo, distribuirlo y adaptarlo
+<strong>sin fines comerciales</strong>, siempre que cites la autoría y compartas el resultado con
+esta misma licencia.</p>
+<p class="lic-nota">Quedan fuera de esta licencia los textos literales del currículo oficial, que
+proceden de la normativa de la Junta de Andalucía, y cualquier material de terceros que aparezca
+citado con su propia licencia.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
